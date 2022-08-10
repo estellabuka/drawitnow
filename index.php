@@ -1,17 +1,9 @@
 <?php
-/**
- * Front to the WordPress application. This file doesn't do anything, but loads
- * wp-blog-header.php which does and tells WordPress to load the theme.
- *
- * @package WordPress
- */
 
-/**
- * Tells WordPress to load the WordPress theme and output it.
- *
- * @var bool
- */
-define( 'WP_USE_THEMES', true );
+$uri = $_SERVER[REQUEST_URI];
 
-/** Loads the WordPress Environment and Template */
-require __DIR__ . '/wp-blog-header.php';
+if ($uri === '/en') {
+    echo file_get_contents("enPage.html");	
+} else {
+	echo file_get_contents("uaPage.html");
+}
