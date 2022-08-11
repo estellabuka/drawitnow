@@ -1,0 +1,116 @@
+/*TYPOGRAPGY*/
+
+/*Body-text*/
+
+body {
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #333D3F;
+}
+
+/*H2, H3 family*/
+.main-title, .secondary-title {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    color: #333D3F;
+    line-height: 120%;
+    text-transform: uppercase;
+  }
+  
+  /*H4, H5 Family*/
+  .branch-title, .text-caption  {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    color: #333D3F;
+    line-height: 140%;
+  }
+  
+  /*H2*/
+  .main-title {
+    font-size: 44px;
+  }
+  /*Subtitle*/
+  .subtitle {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    color: #333D3F;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  /*H3*/
+  .secondary-title {
+    font-size: 32px;
+  }
+  /*H4*/
+  .branch-title {
+    font-size: 24px;
+  }
+  /*H5, header-links and other*/
+  .text-caption {
+    font-size: 16px;
+  }
+  
+  /*Green Color*/
+  .green-font {
+    color: #8ABD63;
+  }
+  
+  /*Primary-button*/
+  .button {
+    position: relative;
+    padding: 19px 38px;
+    border-radius: 30px;
+    border: 0;
+    cursor: pointer;
+  }
+  .prime-btn {
+    background: linear-gradient(95.6deg, #FFE7D9 12.37%, #FFEBB7 35.9%, #EDF493 65.82%, #D2FFAF 88.95%);
+  }
+  .second-btn {
+    background: transparent;
+  }
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 30px; 
+    border: 3px solid transparent;
+    background: linear-gradient(95.6deg, #FFE7D9 12.37%, #FFEBB7 35.9%, #EDF493 65.82%, #D2FFAF 88.95%) border-box;
+    -webkit-mask:
+      linear-gradient(#fff 0 0) padding-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+  .button:after {
+    content: ">";
+    margin-left: 5px;
+  }
+  .prime-btn:hover {
+    background: transparent;
+  } 
+  .second-btn:hover {
+    background: linear-gradient(95.6deg, #FFE7D9 12.37%, #FFEBB7 35.9%, #EDF493 65.82%, #D2FFAF 88.95%);
+  }
+  
+  /*Typography RESPONSIVE*/
+  
+  @media only screen
+  
+  and (max-width: 799px) {
+    .main-title {
+      font-size: 36px;
+    }
+    .secondary-title {
+      font-size: 28px;
+    }
+  }
