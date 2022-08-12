@@ -1,3 +1,6 @@
-body {
-	margin: 0;
-}
+@import 'reset.css';
+@import 'basic.css';
+@import 'icons.css';
+@import 'header-footer.css';
+@import 'qualities-list.css';
+@import 'tariffs.css'
