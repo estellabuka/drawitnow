@@ -1,5 +1,6 @@
 .course-structure__body {
     max-width: 1214px;
+    margin: 0 auto;
 }
 .course-structure__title {
     margin-left: 20px;
