@@ -185,23 +185,26 @@ body {
 }
 
 .first-card {
-    background-image: url('../img/1card.png');
+    background-image: url('../img/tariff-1card.png');
 }
 
 .second-card {
-    background-image: url('../img/2card.png');
+    background-image: url('../img/tariff-2card.png');
 }
 
 
 .third-card {
-    background-image: url('../img/3card.png');
+    background-image: url('../img/tariff-3card.png');
 }
 
 /* Cards main part */
 
+.card-list {
+    text-align: left;
+}
 
 .card-list > ::marker {
-    content:url('../img/icon-list.svg')
+    content:url('../img/tariff-icon-list.svg')
 }
 
 .card-list > li {
@@ -210,7 +213,7 @@ body {
 }
 
 .decline-item ::marker {
-    content:url('../img/icon-list-decline.svg')
+    content:url('../img/tariff-icon-list-decline.svg')
 }
 
 .decline-item > li {
