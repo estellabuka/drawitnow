@@ -9,9 +9,6 @@
   }
   /*Резерв места под картинку*/
   .qualities-image {
-    width: 500px;
-    height: 577px;
-    background: linear-gradient(95.6deg, #FFE7D9 12.37%, #FFEBB7 35.9%, #EDF493 65.82%, #D2FFAF 88.95%);
     margin-right: 47px;
   }
   .qualities-text {
