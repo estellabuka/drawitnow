@@ -112,14 +112,15 @@
 }
 
 .copy_icon {
-    padding: 9px 15px 9px 12px;
-    background-color: #8ABD63;
+    background: none;
     border: none;
     width: 48px;
     height: 48px;
     cursor: pointer;
 }
-
+.copy_icon:hover path {
+    stroke: #feecb6;
+}
 .payment_title {
     margin-bottom: 18px;
     position: relative;
