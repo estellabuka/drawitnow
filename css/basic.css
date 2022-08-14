@@ -74,7 +74,7 @@ body {
   /*Primary-button*/
   .button {
     position: relative;
-    padding: 19px 38px;
+    padding: 17px 36px;
     border-radius: 30px;
     border: 0;
     cursor: pointer;
@@ -88,7 +88,7 @@ body {
     background: linear-gradient(95.6deg, #FFE7D9 12.37%, #FFEBB7 35.9%, #EDF493 65.82%, #D2FFAF 88.95%);
   }
   .second-btn {
-    background: transparent;
+    background: #fff;
     margin-left: 20px;
   }
   .button::before {
@@ -98,21 +98,18 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+    margin: -3px;
+    z-index: -1;
     border-radius: 30px; 
-    border: 3px solid transparent;
+    border: none;
     background: linear-gradient(95.6deg, #FFE7D9 12.37%, #FFEBB7 35.9%, #EDF493 65.82%, #D2FFAF 88.95%) border-box;
-    -webkit-mask:
-      linear-gradient(#fff 0 0) padding-box, 
-      linear-gradient(#fff 0 0);
-    -webkit-mask-composite: destination-out;
-    mask-composite: exclude;
   }
   .button:after {
     content: ">";
     margin-left: 5px;
   }
   .prime-btn:hover {
-    background: transparent;
+    background: #fff;
   } 
   .second-btn:hover {
     background: linear-gradient(95.6deg, #FFE7D9 12.37%, #FFEBB7 35.9%, #EDF493 65.82%, #D2FFAF 88.95%);
