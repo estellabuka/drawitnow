@@ -78,12 +78,18 @@ body {
     border-radius: 30px;
     border: 0;
     cursor: pointer;
+    font-family: 'Roboto Slab';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    color: #333D3F;
   }
   .prime-btn {
     background: linear-gradient(95.6deg, #FFE7D9 12.37%, #FFEBB7 35.9%, #EDF493 65.82%, #D2FFAF 88.95%);
   }
   .second-btn {
     background: transparent;
+    margin-left: 20px;
   }
   .button::before {
     content: "";
