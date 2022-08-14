@@ -1,14 +1,14 @@
 .laptop-case{
     width: 503px;
     height: 577px;
-    background: url(../img/blot.png) 0 0px/503px 577px no-repeat;
+    background: url(../img/blot.png) 0 0px/100% 100% no-repeat;
     margin-right: 47px;
   }
   .laptop-photo{
     display: block;
     position: relative;
     width: 450px;
-    height: 363px;
+    height: 100%;
     top: 50px;
     left: 10px;
   }
@@ -27,7 +27,6 @@
     left: 171px;
   }
   .down-illustr-case {
-    width: 550px;
     height: 455px;
     background: url(../img/blot_down.png) -5px -8px/395px 450px no-repeat;
     max-width: calc( 100% / 2);
