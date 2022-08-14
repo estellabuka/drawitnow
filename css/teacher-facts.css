@@ -1,0 +1,48 @@
+
+.teacher-facts {
+     max-width: 1214px;
+     margin: 0 auto;
+     padding: 60px 0 ;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+   }
+.text-photo-box{
+     max-width: 100%;
+     display: flex;
+     margin: 60px 0;
+   }
+.text-box {
+     display: flex;
+     flex-direction: column;
+     margin: 60px 57px 60px 0;
+     flex: 0 1 550px;
+   }
+.photo-in {
+    width: 586px;
+    height: 455px;
+    background: url(../img/blotphoto.png) 0 5px/506px 408px no-repeat;
+   }
+.photo-with-in{
+     display: block;
+     position: relative;
+     top: 25px;
+     left: 56px;
+   }
+.facts-box{
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-between;
+   }
+.fact-cards{
+     height: 170px;
+     width: 328px;
+     display: flex;
+     align-items: center;
+     background: url(../img/brush-effect-yellow.png) 0 0/142px 170px no-repeat;
+     position: relative;
+     padding-left: 90px;
+     margin-right: 1%;
+   }
