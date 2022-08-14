@@ -1,0 +1,45 @@
+.laptop-case{
+    width: 503px;
+    height: 577px;
+    background: url(../img/blot.png) 0 0px/503px 577px no-repeat;
+    margin-right: 47px;
+  }
+  .laptop-photo{
+    display: block;
+    position: relative;
+    width: 450px;
+    height: 363px;
+    top: 50px;
+    left: 10px;
+  }
+  .cofee-case {
+    margin: 60px;
+    width: 600px;
+    height: 500px;
+    background: url(../img/blot_yellow_green.png) 0 5px/100% 100% no-repeat;
+    width: calc(100% / 2);
+    }
+  .cofee-photo {
+    display: block;
+    position: relative;
+    width: 270px;
+    height: 190px;
+    top: 158px;
+    left: 171px;
+  }
+  .down-illustr-case {
+    margin: 60px;
+    width: 550px;
+    height: 455px;
+    background: url(../img/blot_down.png) -5px -8px/395px 450px no-repeat;
+    max-width: calc( 100% / 2);
+    width: 100%;
+    }
+  .down-photo{
+    display: block;
+    position: relative;
+    width: 547px;
+    height: 455px;
+    bottom: 0;
+    right: 0;
+  }

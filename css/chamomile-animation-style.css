@@ -2,7 +2,7 @@
 .about-course {
   display: flex;
   justify-content: space-between;
-  margin: 0 60px;
+  margin: 120px auto;
   max-width: 1214px;
   overflow: hidden;
 }
