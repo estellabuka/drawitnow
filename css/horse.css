@@ -11,6 +11,13 @@
     bottom: 23vh;
 }
 
+.scroll_icon{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .animation_wrapper{
     width: 1010px;
     height: 564px;
