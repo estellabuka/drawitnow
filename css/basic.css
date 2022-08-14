@@ -60,6 +60,16 @@ body {
   .green-font {
     color: #8ABD63;
   }
+
+  /*Caption*/
+
+  .description-text {
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #878787;
+  }
   
   /*Primary-button*/
   .button {
