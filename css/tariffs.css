@@ -192,30 +192,20 @@
 
 /* Cards main part */
 
-.card-list {
-    text-align: left;
-}
-
-.card-list > ::marker {
-    content:url('../img/tariff-icon-list.svg')
-}
-
 .card-list > li {
-    padding-left: 18px;
     margin: 16px 0;
-}
-
-.decline-item ::marker {
-    content:url('../img/tariff-icon-list-decline.svg')
+    padding-left: 15px;
+    list-style-image: url('../img/tariff-icon-list.svg');
 }
 
 .decline-item > li {
-    padding-left: 18px;
     margin: 16px 0;
+    padding-left: 15px;
+    list-style-image: url('../img/tariff-icon-list-decline.svg');
 }
 
-.inside-list ::marker {
-    content:'– ';
+.inside-list > li {
+    list-style-type: '− ';
 }
 
 .inside-list  {
@@ -225,7 +215,6 @@
 
 .card-daystart {
     margin-bottom: 8px;
-    font-family: 'Mulish';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
