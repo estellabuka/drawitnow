@@ -6,4 +6,6 @@
 @import 'tariffs.css';
 @import 'course-structure.css';
 @import 'feedback.css';
-@import 'chamomile-animation-style.css'
+@import 'modals.css';
+@import "horse.css"; /*promo section*/
+@import 'chamomile-animation-style.css';
