@@ -53,8 +53,9 @@
   }
 /*------Style of the animation------*/
 .chamomile {
-    height: 616px;
-    width: 607px;
+  height: 653px;
+  width: 607px;
+  padding-top: 24px;
     /*don't touch width*/
   }
   .imags-case {
@@ -139,10 +140,11 @@
     left: 184px;
     z-index: 94;
   }
+  /*
   @media only screen
   and (max-width: 800px) {
   
     .chamomile{
       max-width: 100%;
     }
-  }
+  }*/
