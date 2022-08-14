@@ -31,12 +31,11 @@
     display: block;
     margin-top: 43px;   
     }
-.cards__list li:before {
-content: url(../img/check-icon.svg);
-width: 9px;
-height: 7px;
-margin-right: 16px;
-}
+.cards__list li {
+     margin: 10px 0 10px 20px;
+    padding-left: 16px;
+    list-style-image: url("../img/check-icon.svg");
+    }    
 .cards-top__content li {
  margin-bottom: 10px;
 }
