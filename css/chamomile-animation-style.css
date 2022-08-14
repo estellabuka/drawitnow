@@ -10,6 +10,9 @@
   flex: 0 1 550px;
   padding-left: 1%;
 }
+.margin-bottom {
+  margin-bottom: 40px;
+}
 .main-list-about {
     margin: 30px 0 30px;
   }
