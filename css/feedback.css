@@ -35,6 +35,7 @@
 }
 .feedback__column .green-font {
     padding: 24px 30px 60px;
+    text-align: center;
   }
 .prev-arrow {
     background: url(../img/arrow-left.png) no-repeat;
