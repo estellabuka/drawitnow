@@ -1,0 +1,29 @@
+.path-main-part {
+    display: flex;
+    justify-content: space-between;
+}
+
+.path-main-text {
+    width: calc(100% / 2);
+
+}
+
+.path-text {
+    margin-top: 40px;
+}
+
+.path-text-item {
+    margin-top: 15px;
+
+}
+
+.path-text-item-bottom {
+    margin: 30px 100px 40px 0;
+    font-size: 14px;
+    color: #878787;
+}
+
+.path-image {
+    width: calc(100% / 2);
+    background: linear-gradient(95.6deg, #FFE7D9 12.37%, #FFEBB7 35.9%, #EDF493 65.82%, #D2FFAF 88.95%);
+}
