@@ -1,4 +1,15 @@
 /*--- More about course' section ---*/
+.about-course {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 60px;
+  max-width: 1214px;
+  overflow: hidden;
+}
+.about-course-text {
+  flex: 0 1 550px;
+  padding-left: 1%;
+}
 .main-list-about {
     margin: 30px 0 30px;
   }
@@ -41,12 +52,13 @@
 .chamomile {
     height: 616px;
     width: 607px;
+    /*don't touch width*/
   }
   .imags-case {
     display: block;
     position: relative;
     height: 616px;
-    width: 607px;
+    width: 100%;
     animation-name: rotation;
     animation-duration: 15s;
     animation-iteration-count: infinite;
