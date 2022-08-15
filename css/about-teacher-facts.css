@@ -20,7 +20,8 @@
 .photo-in {
     width: 586px;
     height: 405px;
-    background: url(../img/blotphoto.png) 0 5px/506px 408px no-repeat;
+    position: relative;
+    background: url(../img/blotphoto.png) 0 10px/506px 408px no-repeat;
    }
 .photo-with-in{
      display: block;
@@ -29,14 +30,20 @@
      left: 56px;
    }
 .icon-about{
-  position: relative;
+  position: absolute;
   right: 28px;
   bottom: 90px;
   }
+.photo-in .icon-about:hover svg * {
+    fill: #8ABD63;
+    cursor: pointer;
+}
+.photo-in .icon-about svg *{
+    fill: #333D3F;
+}
   .icon-about::after {
     content: 'LinkedIn';
-    position: relative;
-    font-family: 'Spline Sans Mono';
+    position: absolute;
     right: 73px;
     bottom: 95px;
     }
