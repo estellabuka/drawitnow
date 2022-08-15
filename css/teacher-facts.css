@@ -28,6 +28,18 @@
      top: 25px;
      left: 56px;
    }
+.icon-about{
+  position: relative;
+  right: 28px;
+  bottom: 90px;
+  }
+  .icon-about::after {
+    content: 'LinkedIn';
+    position: relative;
+    font-family: 'Spline Sans Mono';
+    right: 73px;
+    bottom: 95px;
+    }
 .facts-box{
      width: 100%;
      display: flex;
