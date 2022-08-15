@@ -20,7 +20,6 @@
 .photo-in {
     width: 586px;
     height: 405px;
-    position: relative;
     background: url(../img/blotphoto.png) 0 10px/506px 408px no-repeat;
    }
 .photo-with-in{
@@ -30,11 +29,11 @@
      left: 56px;
    }
 .icon-about{
-  position: absolute;
+  position: relative;
   right: 28px;
   bottom: 90px;
   }
-.photo-in .icon-about:hover svg * {
+  .photo-in .icon-about:hover svg * {
     fill: #8ABD63;
     cursor: pointer;
 }
@@ -44,6 +43,12 @@
   .icon-about::after {
     content: 'LinkedIn';
     position: absolute;
+    right: 73px;
+    bottom: 95px;
+    }
+  .icon-about::after {
+    content: 'LinkedIn';
+    position: relative;
     right: 73px;
     bottom: 95px;
     }
