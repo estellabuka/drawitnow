@@ -528,7 +528,9 @@
                             <li class="card__list-item">онлайн-лекції</li>
                           </div>
                         </ul>
-                        <button class="button prime-btn btn-tariff" data-modal="enroll" onClick="showModal(this)">Записатися зараз</button>
+                        <div class="btn-absolute">
+                            <button class="button prime-btn btn-tariff" data-modal="enroll" onClick="showModal(this)">Записатися зараз</button>
+                        </div>
                       </div>
                     </div>
                     <!-- Second card item -->
@@ -565,11 +567,13 @@
                             </ul>
                           </li>
                         </ul>
-                        <div class="card-bottom">
-                          <p class="card-daystart">Cтарт<span>23.09.2022</span></p>
-                          <button class="button prime-btn btn-tariff" data-modal="enroll" onClick="showModal(this)">Записатися зараз</button>
+                        <div class="btn-absolute">
+                            <div class="card-bottom">
+                                <p class="card-daystart">Cтарт<span>23.09.2022</span></p>
+                                <button class="button prime-btn btn-tariff" data-modal="enroll" onClick="showModal(this)">Записатися зараз</button>
+                            </div>
                         </div>
-                      </div>
+                        </div>
                     </div>
                     <!-- Third card item -->
                     <div class="card-item">
@@ -605,9 +609,11 @@
                             </ul>
                           </li>
                         </ul>
-                        <div class="card-bottom">
-                          <p class="card-daystart">Cтарт<span>23.09.2022</span></p>
-                          <button class="button prime-btn btn-tariff" data-modal="enroll" onClick="showModal(this)">Записатися зараз</button>
+                        <div class="btn-absolute">
+                            <div class="card-bottom">
+                                <p class="card-daystart">Cтарт<span>23.09.2022</span></p>
+                                <button class="button prime-btn btn-tariff" data-modal="enroll" onClick="showModal(this)">Записатися зараз</button>
+                            </div>
                         </div>
                       </div>
                     </div>
@@ -628,8 +634,8 @@
                                 <p class="path-text-item-bottom">Звісно не зі мною ви на все життя 😆, а самостійно доведеться вчити щось нове щодня</p>
                             </div>
                             <div class="path-buttons">
-                                <button class="button prime-btn">Записатися зараз</button>
-                                <button class="button second-btn">Купити курс</button>
+                                <button class="button prime-btn" data-modal="enroll" onClick="showModal(this)">Записатися зараз</button>
+                                <button class="button second-btn" data-modal="payment" onClick="showModal(this)">Купити курс</button>
                             </div>
                         </div>
                         <div class="cofee-case">
@@ -717,8 +723,8 @@
                                         </svg>Oleksandra Kovalenko</a>
                                 </div>
                             <div class="contact-buttons">
-                                <button class="button prime-btn">Записатися зараз</button>
-                                <button class="button second-btn">Купити курс</button>
+                                <button class="button prime-btn" data-modal="enroll" onClick="showModal(this)">Записатися зараз</button>
+                                <button class="button second-btn" data-modal="payment" onClick="showModal(this)">Купити курс</button>
                             </div>
                         </div>
                     </div>

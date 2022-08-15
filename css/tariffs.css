@@ -42,7 +42,7 @@
     max-width: 370px;
     min-height: 840px;
     width: 100%;
-    margin: 10px 15px;
+    margin: 10px 17px;
     border-radius: 60px;
     background: white;
 }
@@ -233,4 +233,8 @@
 .btn-tariff {
     display: block;
     margin: 0 auto;
+}
+
+.btn-absolute {
+    z-index: 1;
 }
