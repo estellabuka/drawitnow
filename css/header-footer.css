@@ -5,7 +5,6 @@
 }
 
 .header {
-    top: 0;
     padding: 20px 0;
     position: fixed;
     width: 100%;
@@ -45,6 +44,19 @@
 
 .menu-item:active {
     color: #8ABD63;
+}
+
+.header-social {
+    display: none;
+    margin-top: 100px;
+}
+
+.header-social a + a {
+    margin-left: 24px;
+}
+
+.lock-scroll {
+    overflow: hidden;
 }
 
 .language {
@@ -178,30 +190,34 @@
         height: 26px;
         cursor: pointer;
         z-index: 99;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
     .menu-btn > span,
     .menu-btn > span::before,
     .menu-btn > span::after {
         display: block;
         position: absolute;
-        width: 100%;
+        width: 26px;
         height: 2px;
         background-color: #333D3F;
         transition-duration: 1s;
+        right: 0;
     }
     .menu-btn > span::before {
         content: '';
         top: -8px;
+        width: 19px;
     }
     .menu-btn > span::after {
         content: '';
         top: 8px;
+        width: 12px;
     }
     .menubox {
         position: fixed;
         visibility: hidden;
-        top: 0;
-        left: -100%;
+        top: -100%;
+        left: 0;
         width: 100%;
         height: 100%;
         padding: 70px 0;
@@ -215,6 +231,18 @@
     .menubox button {
         display: block;
     }
+    .header-social {
+        display: block;
+    }
+    .header-social::before {
+        content: '';
+        height: 2px;
+        width: 100%;
+        left: 0;
+        top: 280px;
+        background: #8ABD63;
+        position: absolute;
+    }
     .header .menu-item {
         display: block;
         padding: 12px 24px;
@@ -225,25 +253,28 @@
     }
     #menu-toggle:checked ~ .menu-btn > span{
         transform: rotate(45deg);
+        width: 26px;
     }
     #menu-toggle:checked ~ .menu-btn > span::before{
         top: 0;
         transform: rotate(0);
+        width: 26px;
     }
     #menu-toggle:checked ~ .menu-btn > span::after{
         top: 0;
         transform: rotate(90deg);
+        width: 26px;
     }
     #menu-toggle:checked ~ .menubox{
         visibility: visible;
         left: 0;
+        top: 0;
     }
     .header-wrapper .button {
         margin-right: 50px;
     }
     .menubox .button {
-        top: 25px;
-        margin: 10px 0 0 0;
+        margin: 60px 0 0 0;
     }
     .footer-text br {
         display: none;
@@ -332,7 +363,14 @@
     .menubox .button {
         display: block;
         position: relative;
-        top: 25px;
+    }
+    .language {
+        position: absolute;
+        z-index: 9;
+        right: 330px;
+        margin: 0;
+        right: 73px;
+        top: 20px;
     }
     .footer-social {
         display: flex;
