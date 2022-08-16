@@ -11,6 +11,9 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <div class="attention">
+            <span class="subtitle">цей сайт створено учнями курса</span>
+        </div>
         <!-- Header starts here -->
         <header class="header">
             <div class="container">
@@ -326,11 +329,11 @@
                         IT-майбутнє зараз
                     </h2>
                 </div>
-                <img class="scroll_icon" src="./img/scroll-icon.svg" alt="scroll"/>
+                <!--<img class="scroll_icon" src="./img/scroll-icon.svg" alt="scroll"/>-->
             </section>
 
             <!-- 'It's for you if' section -->
-            <section class="list-for-you">
+            <section class="flex container">
                 <div class="laptop-case">
                     <div><img class="laptop-photo" src="img/pic1.png" alt="laptop !3"></div>
                 </div>
@@ -363,11 +366,11 @@
                 </div>
             </section>
             <!-- 'A little about me' section -->
-            <section class="about-me container">
-                <div class="text-photo-box">
+            <section class="container">
+                <div class="text-photo-box flex">
                     <div class="text-box">
                         <div class="subtitle">Хто я така?</div>
-                        <div><h2 class="main-title margin-bottom">Трохи про мене</h2></div>
+                        <h2 class="main-title margin-bottom">Трохи про мене</h2>
                         <div class="margin-bottom"><p>Я Саша Коваленко, практикуюча верстальниця та UX/UI дизайнерка аж з 2010 року. 
                                 Розпочинала свою кар'єру в IT з контент-менеджменту, самостійно вивчаючи HTML/CSS. Згодом мені пощастило потрапити до інтернатури в компанію. 
                                 Зараз я працюю в українській компанії Brightgrove на німецькому проекті і перебуваю в Німеччині.</p>
@@ -387,7 +390,7 @@
                     </div>
                 </div>
              <!-- 'Teacher's facts' section -->
-                <div class="facts-box">
+                <div class="facts-box flex">
                     <div class="fact-cards">12 років досвіду в IT</div>
                     <div class="fact-cards">починала вчити верстку з книги HTML/CSS для чайників</div>
                     <div class="fact-cards">змінила 5 міст за 12 років</div>
@@ -397,128 +400,115 @@
                 </div>
             </section>
             <!-- 'More about course' section -->
-            <section class="container" id="about-course">
-                <div class="about-course">
-                    <div class="about-course-text">
-                        <div class="subtitle">Про що мій Авторський курс?</div>
-                        <h2 class="main-title margin-bottom">Детальніше</h2>
-                        <p>Курс про базові навички HTML/CSS верстання, мануальне тестування веб-сторінок та роботу з графічними редакторами. Курс допоможе остаточно вирішити в якому з напрямків рухатись далі, щоб працювати в IT</p>
-                        <ul class="main-list-about">
-                            <li class="dec">Макети організовані таким чином, що учень стикається зі всім, що може бути у верстанні сайтів</li>
-                            <li class="dec">Курс розраховано на новачків та не потребує попередньої підготовки</li>
-                            <li class="dec">Немає жорсткої прив'язки за часом проведення занять, можна рухатись у комфортному для себе темпі та вивчати матеріали у будь який час.</li>
-                        </ul>
-                        <div class="links-case-about">
-                            <a href="#"><p class="contact-about">Підтримка 24/7</p></a>
-                            <a href="#"><p class="team text-caption">Про команду</p></a>
-                        </div>
-                        <div class="act margin-bottom">
-                            <button class="button prime-btn" data-modal="enroll" onClick="showModal(this)">Записатися зараз</button>
-                            <button class="button second-btn" data-modal="payment" onClick="showModal(this)">Купити курс</button>
-                        </div>
+            <section class="flex container" id="about-course">
+                <div class="about-course-text">
+                    <div class="subtitle">Про що мій Авторський курс?</div>
+                    <h2 class="main-title margin-bottom">Детальніше</h2>
+                    <p>Курс про базові навички HTML/CSS верстання, мануальне тестування веб-сторінок та роботу з графічними редакторами. Курс допоможе остаточно вирішити в якому з напрямків рухатись далі, щоб працювати в IT</p>
+                    <ul class="main-list-about">
+                        <li class="dec">Макети організовані таким чином, що учень стикається зі всім, що може бути у верстанні сайтів</li>
+                        <li class="dec">Курс розраховано на новачків та не потребує попередньої підготовки</li>
+                        <li class="dec">Немає жорсткої прив'язки за часом проведення занять, можна рухатись у комфортному для себе темпі та вивчати матеріали у будь який час.</li>
+                    </ul>
+                    <div class="links-case-about">
+                        <a href="#"><p class="contact-about">Підтримка 24/7</p></a>
+                        <a href="#"><p class="team text-caption">Про команду</p></a>
                     </div>
-                    <!--Animation chamomile-->
-                    <div class="chamomile">
-                        <div class="imags-case">
-                            <img class="slide img-centr" src="img/layout-scrnshot.png" alt="Слайд 1">
-                            <img class="slide img-right-up" src="img/layout-scrnshot-one.png" alt="Слайд 2">
-                            <img class="slide img-right-down" src="img/layout-scrnshot-two.png" alt="Слайд 3">
-                            <img class="slide img-down" src="img/layout-scrnshot-three.png" alt="Слайд 4">
-                            <img class="slide img-left-down" src="img/layout-scrnshot-four.png" alt="Слайд 5">
-                            <img class="slide img-left-up" src="img/layout-scrnshot-five.png" alt="Слайд 6">
-                            <img class="slide img-up" src="img/layout-scrnshot-ziro.png" alt="Слайд 7">
-                        </div>
+                    <div class="act margin-bottom">
+                        <button class="button prime-btn" data-modal="enroll" onClick="showModal(this)">Записатися зараз</button>
+                        <button class="button second-btn" data-modal="payment" onClick="showModal(this)">Купити курс</button>
+                    </div>
+                </div>
+                <!--Animation chamomile-->
+                <div class="chamomile">
+                    <div class="imags-case">
+                        <img class="slide img-centr" src="img/layout-scrnshot.png" alt="Слайд 1">
+                        <img class="slide img-right-up" src="img/layout-scrnshot-one.png" alt="Слайд 2">
+                        <img class="slide img-right-down" src="img/layout-scrnshot-two.png" alt="Слайд 3">
+                        <img class="slide img-down" src="img/layout-scrnshot-three.png" alt="Слайд 4">
+                        <img class="slide img-left-down" src="img/layout-scrnshot-four.png" alt="Слайд 5">
+                        <img class="slide img-left-up" src="img/layout-scrnshot-five.png" alt="Слайд 6">
+                        <img class="slide img-up" src="img/layout-scrnshot-ziro.png" alt="Слайд 7">
                     </div>
                 </div>
             </section>
             <!-- 'Course structure' section -->
-            <section class="structure-course">
-                <div class="course-structure__body">
-                    <div class="course-structure__title">
-                        <p class="subtitle">проекти, які ми будемо кодити</p>
-                        <h2 class="main-title">Структура курсу</h2>
-                    </div>
-                    <div class="course-structure__container">
-                        <div class="course-structure__cards">
-                            <div class="cards-top">
-                                <div class="cards-top__body">
-                                    <div class="cards-top__title">
-                                        <h3 class="secondary-title">1-й проєкт</h3>
-                                    </div>
-                                    <div class="cards-top__content">
-                                        <ul class="cards__list">
-                                            <li>ви долаєте свої перші кроки у верстанні за детальними підказками. Рухаючись макетом, ви вивчаєте базові HTML теги й основні CSS правила</li>
-                                            <li>робота з текстом</li>
-                                            <li>робота з простою графікою (растровою й векторною)</li>
-                                            <li>робота з кольорами і фігурами</li>
-                                            <li>просте позиціонування об'єктів</li>
-                                        </ul>
-                                        <p>Наприкінці роботи з першим проектом ви ознайомитесь із базою верстання. Вам стане зрозуміло чи цікава вам тематика зтворення сайтів і чи варто вивчати front end більш глибоко.</p>    
-                                    </div>
-                                </div>
-                                <div class="cards-top__body">
-                                    <div class="cards-top__title">
-                                        <h3 class="secondary-title">2-й, 3-й, 4-й проєкти</h3>
-                                    </div>
-                                    <div class="cards-top__content">
-                                        <ul class="cards__list">
-                                            <li>верстка й адаптацію під мобільні пристрої</li>
-                                            <li>робота з псевдо елементами</li>
-                                            <li>складне позиціонування за допомогою flex та в інші способи</li>
-                                            <li>підключення скриптів та анімації</li>
-                                            <li>командна робота з системою контроля версій git</li>
-                                        </ul> 
-                                    </div>
-                                </div>
+            <section class="structure-course container">
+                <p class="subtitle">проекти, які ми будемо кодити</p>
+                <h2 class="main-title">Структура курсу</h2>
+                <div class="course-structure__cards flex">
+                        <div class="cards-top__body">
+                            <div class="cards-top__title">
+                                <h3 class="secondary-title">1-й проєкт</h3>
                             </div>
-                            <div class="cards-bottom">
-                                <div class="card-bottom__body-small">
-                                    <div class="card-bottom__column">
-                                        <div class="card-bottom__title">
-                                            <h3 class="secondary-title">Навчальні матеріали</h3>
-                                        </div>
-                                        <div class="card-bottom__content">
-                                            <ul class="cards__list">
-                                                <li>статті з покроковими підказками</li>
-                                                <li>відео підказки</li>
-                                                <li>приклади коду</li>
-                                            </ul> 
-                                        </div>
-                                    </div>           
-                                </div>
-                                <div class="card-bottom__body-big">
-                                    <div class="card-bottom__column">
-                                        <div class="card-bottom__title">
-                                            <h3 class="secondary-title">Наприкінці курсу у вас буде</h3>
-                                        </div>
-                                        <div class="card-bottom__content">
-                                            <ul class="cards__list">
-                                                <li>повне уявлення про роботу верстальника і невеличке портфоліо з прикладами кода</li>
-                                                <li>ви здобудете достатній рівень знання HTML і CSS для подальшого вивчення JavaScript чи основ дизайну</li>
-                                                <li>у вас сформується команда, всередині якої ви зможете ділитись корисною інформацією і допомогати один одному</li>
-                                            </ul> 
-                                        </div>  
-                                    </div>         
-                                </div>
+                            <div class="cards-top__content">
+                                <ul class="cards__list">
+                                    <li>ви долаєте свої перші кроки у верстанні за детальними підказками. Рухаючись макетом, ви вивчаєте базові HTML теги й основні CSS правила</li>
+                                    <li>робота з текстом</li>
+                                    <li>робота з простою графікою (растровою й векторною)</li>
+                                    <li>робота з кольорами і фігурами</li>
+                                    <li>просте позиціонування об'єктів</li>
+                                </ul>
+                                <p>Наприкінці роботи з першим проектом ви ознайомитесь із базою верстання. Вам стане зрозуміло чи цікава вам тематика зтворення сайтів і чи варто вивчати front end більш глибоко.</p>    
                             </div>
                         </div>
-                        <div class="course-structure__buttons">
-                            <button class="button prime-btn" data-modal="enroll" onClick="showModal(this)">
-                                Записатися зараз
-                            </button>
-                            <button class="button second-btn" data-modal="payment" onClick="showModal(this)">
-                                Купити курс
-                            </button>
+                        <div class="cards-top__body">
+                            <div class="cards-top__title">
+                                <h3 class="secondary-title">2-й, 3-й, 4-й проєкти</h3>
+                            </div>
+                            <div class="cards-top__content">
+                                <ul class="cards__list">
+                                    <li>верстка й адаптацію під мобільні пристрої</li>
+                                    <li>робота з псевдо елементами</li>
+                                    <li>складне позиціонування за допомогою flex та в інші способи</li>
+                                    <li>підключення скриптів та анімації</li>
+                                    <li>командна робота з системою контроля версій git</li>
+                                </ul> 
+                            </div>
                         </div>
-                    </div>
+                        <div class="card-bottom__body-small">
+                            <div class="card-bottom__column">
+                                <div class="card-bottom__title">
+                                    <h3 class="secondary-title">Навчальні матеріали</h3>
+                                </div>
+                                <div class="card-bottom__content">
+                                    <ul class="cards__list">
+                                        <li>статті з покроковими підказками</li>
+                                        <li>відео підказки</li>
+                                        <li>приклади коду</li>
+                                    </ul> 
+                                </div>
+                            </div>           
+                        </div>
+                        <div class="card-bottom__body-big">
+                            <div class="card-bottom__column">
+                                <div class="card-bottom__title">
+                                    <h3 class="secondary-title">Наприкінці курсу у вас буде</h3>
+                                </div>
+                                <div class="card-bottom__content">
+                                    <ul class="cards__list">
+                                        <li>повне уявлення про роботу верстальника і невеличке портфоліо з прикладами кода</li>
+                                        <li>ви здобудете достатній рівень знання HTML і CSS для подальшого вивчення JavaScript чи основ дизайну</li>
+                                        <li>у вас сформується команда, всередині якої ви зможете ділитись корисною інформацією і допомогати один одному</li>
+                                    </ul> 
+                                </div>  
+                            </div>         
+                        </div>
+                </div>
+                <div class="course-structure__buttons">
+                    <button class="button prime-btn" data-modal="enroll" onClick="showModal(this)">
+                        Записатися зараз
+                    </button>
+                    <button class="button second-btn" data-modal="payment" onClick="showModal(this)">
+                        Купити курс
+                    </button>
                 </div>
             </section>
             <!-- 'Tariffs' section -->
-            <section class="tariffs" id="tariffs">
-                <div class="container">
-                    <p class="subtitle">cкільки коштує?</p>
-                    <h2 class="main-title">тарифи</h2>
-                <div class="tariffs__card">
+            <section class="tariffs container" id="tariffs">
+                <p class="subtitle">cкільки коштує?</p>
+                <h2 class="main-title">тарифи</h2>
+                <div class="tariffs__card flex">
                     <!-- First card item -->
                     <div class="card-item">
                       <div class="card-border">
@@ -636,116 +626,101 @@
                         </div>
                       </div>
                     </div>
-                  </div>
                 </div>
-              </section>
+            </section>
             <!-- 'Start this path' section -->
-            <section class="start-path">
-                <div class="container">
-                    <div class="path-main-part">
-                        <div class="path-main-text">
-                            <p class="subtitle">Я дуже хочу допомогти кожному</p>
-                            <h2 class="main-title">розпочати цей шлях</h2>
-                            <div class="path-text">
-                                <p class="path-text-item">Максимально відверто - це довгий шлях!</p>
-                                <p class="path-text-item">Будь ласка не чекайте, що через 2 місяці ви з легкістю отримаєте роботу з великою зарплатнею. Ніт! Конкуренція дуже серйозна, багато новачків готових працювати майже безкоштовно.</p>
-                                <p class="path-text-item">Але і роботи теж багато, купа інформації і можливостей для постійного навчання і найголовніше - безкрайній простір для розвитку і постійного професійного зростання. Тому будьте готові, що навчання яке ви розпочнете зараз, буде продовжуватися щодня, поки ви в IT</p>
-                                <p class="path-text-item-bottom">Звісно не зі мною ви на все життя 😆, а самостійно доведеться вчити щось нове щодня</p>
-                            </div>
-                            <div class="path-buttons">
-                                <button class="button prime-btn" data-modal="enroll" onClick="showModal(this)">Записатися зараз</button>
-                                <button class="button second-btn" data-modal="payment" onClick="showModal(this)">Купити курс</button>
-                            </div>
-                        </div>
-                        <div class="cofee-case">
-                            <div><img class="cofee-photo" src="img/cup_photo.png" alt="cofe 8*"></div>
-                        </div>
+            <section class="flex container">
+                <div class="path-main-text">
+                    <p class="subtitle">Я дуже хочу допомогти кожному</p>
+                    <h2 class="main-title">розпочати цей шлях</h2>
+                    <div class="path-text">
+                        <p class="path-text-item">Максимально відверто - це довгий шлях!</p>
+                        <p class="path-text-item">Будь ласка не чекайте, що через 2 місяці ви з легкістю отримаєте роботу з великою зарплатнею. Ніт! Конкуренція дуже серйозна, багато новачків готових працювати майже безкоштовно.</p>
+                        <p class="path-text-item">Але і роботи теж багато, купа інформації і можливостей для постійного навчання і найголовніше - безкрайній простір для розвитку і постійного професійного зростання. Тому будьте готові, що навчання яке ви розпочнете зараз, буде продовжуватися щодня, поки ви в IT</p>
+                        <p class="path-text-item-bottom">Звісно не зі мною ви на все життя 😆, а самостійно доведеться вчити щось нове щодня</p>
                     </div>
+                    <div class="path-buttons">
+                        <button class="button prime-btn" data-modal="enroll" onClick="showModal(this)">Записатися зараз</button>
+                        <button class="button second-btn" data-modal="payment" onClick="showModal(this)">Купити курс</button>
+                    </div>
+                </div>
+                <div class="cofee-case">
+                    <div><img class="cofee-photo" src="img/cup_photo.png" alt="cofe 8*"></div>
                 </div>
             </section>
             <!-- Feedbacks section -->
-            <section class="feedback" id="feedbacks">
-                <div class="feedback-container">
-                    <div class="feedback__title">
-                        <p class="subtitle">Що учні пишуть після проходження курсу?</p>
-                        <h2 class="main-title">Відгуки</h2>
+            <section class="feedback container" id="feedbacks">
+                <p class="subtitle">Що учні пишуть після проходження курсу?</p>
+                <h2 class="main-title">Відгуки</h2>
+                <div class="gallery">
+                    <div class="slider">
+                        <div class="feedback__card">
+                            <a href="#" target=”_blank”>
+                                <div class="feedback__column">
+                                    <p class="feedback__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptatibus magnam rem ad incidunt vero ipsam voluptatum iusto eos dolor earum. Saepe, quam obcaecati repudiandae asperiores quod dignissimos expedita fugit!</p>
+                                    <p class="green-font">@instagram_username</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="gallery">
-                        <div class="slider">
-                            <div class="feedback__card">
-                                <a href="#" target=”_blank”>
-                                    <div class="feedback__column">
-                                        <p class="feedback__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptatibus magnam rem ad incidunt vero ipsam voluptatum iusto eos dolor earum. Saepe, quam obcaecati repudiandae asperiores quod dignissimos expedita fugit!</p>
-                                        <p class="green-font">@instagram_username</p>
-                                    </div>
-                                </a>
-                            </div>
+                    <div class="slider">
+                        <div class="feedback__card">
+                            <a href="#" target=”_blank”>
+                                <div class="feedback__column">
+                                    <p class="feedback__text">Est tation latine aliquip id, mea ad tale illud definitiones. Periculis omittantur necessitatibus eum ad, pro eripuit minimum comprehensam ne, usu cu stet.</p>
+                                    <p class="green-font">@instagram_username</p>
+                                </div>
+                            </a>
                         </div>
-                        <div class="slider">
-                            <div class="feedback__card">
-                                <a href="#" target=”_blank”>
-                                    <div class="feedback__column">
-                                        <p class="feedback__text">Est tation latine aliquip id, mea ad tale illud definitiones. Periculis omittantur necessitatibus eum ad, pro eripuit minimum comprehensam ne, usu cu stet.</p>
-                                        <p class="green-font">@instagram_username</p>
-                                    </div>
-                                </a>
-                            </div>
+                    </div>
+                    <div class="slider">
+                        <div class="feedback__card">
+                            <a href="#" target=”_blank”>
+                                <div class="feedback__column">
+                                    <p class="feedback__text">Est tation latine aliquip id, mea ad tale illud definitiones. Periculis omittantur necessitatibus eum ad, pro eripuit minimum comprehensam ne, usu cu stet.</p>
+                                    <p class="green-font">@instagram_username</p>
+                                </div>
+                            </a>
                         </div>
-                        <div class="slider">
-                            <div class="feedback__card">
-                                <a href="#" target=”_blank”>
-                                    <div class="feedback__column">
-                                        <p class="feedback__text">Est tation latine aliquip id, mea ad tale illud definitiones. Periculis omittantur necessitatibus eum ad, pro eripuit minimum comprehensam ne, usu cu stet.</p>
-                                        <p class="green-font">@instagram_username</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="slider">
-                            <div class="feedback__card">
-                                <a href="#" target=”_blank”>
-                                    <div class="feedback__column">
-                                        <p class="feedback__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nisi quos provident labore unde, nihil non expedita corporis voluptates ea fuga voluptatibus natus totam, iste velit, eligendi officia quibusdam aliquam!</p>
-                                        <p class="green-font">@instagram_username</p>
-                                    </div>
-                                </a>
-                            </div>
+                    </div>
+                    <div class="slider">
+                        <div class="feedback__card">
+                            <a href="#" target=”_blank”>
+                                <div class="feedback__column">
+                                    <p class="feedback__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nisi quos provident labore unde, nihil non expedita corporis voluptates ea fuga voluptatibus natus totam, iste velit, eligendi officia quibusdam aliquam!</p>
+                                    <p class="green-font">@instagram_username</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- Contacts section -->
-            <section class="contact" id="contacts">
-                <div class="container">
-                    <div class="contact-box">
-                        <!--<div class="contact-image">-->
-                            <div class="down-illustr-case">
-                                <div><img class="down-photo" src="img/photo_down.png" alt="nice photo ;)"></div>
-                            </div>
-                        <!--</div>-->
-                        <div class="contact-social">
-                                <p class="subtitle">будемо на зв’язку</p>
-                                <h2 class="main-title">Контакти</h2>
-                                <div class="contact-social-item">
-                                    <a href="https://instagram.com/draw_it_now?igshid=YmMyMTA2M2Y=" class="contact-social-link" target=”_blank”><svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M21.5777 24.0512C20.7559 24.2997 19.8734 24.2552 19.0808 23.9253C18.5746 23.7153 18.1212 23.3958 17.7533 22.9896C17.3853 22.5834 17.112 22.1007 16.9531 21.5763C16.7941 21.0518 16.7534 20.4986 16.8339 19.9565C16.9143 19.4144 17.114 18.8969 17.4185 18.4413C17.723 17.9856 18.1247 17.6031 18.5948 17.3213C19.0648 17.0396 19.5915 16.8655 20.1369 16.8117C20.6823 16.7579 21.2328 16.8257 21.7488 17.0103C22.2649 17.1948 22.7336 17.4914 23.1212 17.8788C23.7293 18.4848 24.1081 19.2832 24.193 20.1375C24.2778 20.9918 24.0635 21.8491 23.5865 22.5629C23.1095 23.2767 22.3995 23.8028 21.5777 24.0512Z" fill="#333D3F"/>
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 11.3909C23.4667 11.3909 23.8182 11.402 24.9899 11.4556C26.0737 11.5051 26.6616 11.6859 27.0535 11.8384C27.5361 12.0164 27.9727 12.3001 28.3313 12.6687C28.7202 13.0576 28.9596 13.4283 29.1616 13.9465C29.3141 14.3384 29.495 14.9263 29.5444 16.0101C29.598 17.1818 29.6091 17.5333 29.6091 20.5C29.6091 23.4667 29.598 23.8182 29.5444 24.9899C29.495 26.0737 29.3141 26.6616 29.1616 27.0535C28.9838 27.5354 28.7 27.9727 28.3313 28.3313C27.9424 28.7202 27.5717 28.9596 27.0535 29.1616C26.6616 29.3141 26.0737 29.495 24.9899 29.5444C23.8182 29.598 23.4677 29.6091 20.5 29.6091C17.5323 29.6091 17.1818 29.598 16.0101 29.5444C14.9263 29.495 14.3384 29.3141 13.9465 29.1616C13.4646 28.9838 13.0273 28.7 12.6687 28.3313C12.3 27.9727 12.0162 27.5354 11.8384 27.0535C11.6859 26.6616 11.5051 26.0737 11.4556 24.9899C11.402 23.8182 11.3909 23.4667 11.3909 20.5C11.3909 17.5333 11.402 17.1818 11.4556 16.0101C11.5051 14.9263 11.6859 14.3384 11.8384 13.9465C12.0163 13.4639 12.3 13.0273 12.6687 12.6687C13.0576 12.2798 13.4283 12.0404 13.9465 11.8384C14.3384 11.6859 14.9263 11.5051 16.0101 11.4556C17.1818 11.402 17.5333 11.3909 20.5 11.3909ZM18.3144 15.2236C17.6215 15.5106 16.9919 15.9313 16.4616 16.4616C15.3906 17.5327 14.7889 18.9853 14.7889 20.5C14.7889 22.0147 15.3906 23.4673 16.4616 24.5384C17.5327 25.6094 18.9853 26.2111 20.5 26.2111C22.0147 26.2111 23.4673 25.6094 24.5384 24.5384C25.0687 24.0081 25.4894 23.3785 25.7764 22.6856C26.0634 21.9927 26.2111 21.25 26.2111 20.5C26.2111 19.75 26.0634 19.0074 25.7764 18.3144C25.4894 17.6215 25.0687 16.9919 24.5384 16.4616C24.0081 15.9313 23.3785 15.5106 22.6856 15.2236C21.9927 14.9366 21.25 14.7889 20.5 14.7889C19.75 14.7889 19.0074 14.9366 18.3144 15.2236ZM27.7872 15.201C27.7144 15.3663 27.6092 15.5154 27.4778 15.6394C27.2222 15.8805 26.8827 16.0125 26.5314 16.0074C26.1801 16.0023 25.8446 15.8604 25.5961 15.612C25.3477 15.3635 25.2058 15.028 25.2007 14.6767C25.1956 14.3254 25.3276 13.9859 25.5687 13.7303C25.6927 13.5989 25.8417 13.4937 26.0071 13.4209C26.1725 13.3481 26.3507 13.3093 26.5314 13.3067C26.712 13.304 26.8914 13.3377 27.0588 13.4056C27.2262 13.4735 27.3783 13.5743 27.506 13.7021C27.6338 13.8298 27.7346 13.9819 27.8025 14.1493C27.8704 14.3167 27.9041 14.4961 27.9014 14.6767C27.8988 14.8573 27.8599 15.0356 27.7872 15.201Z" fill="#333D3F"/>
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 40.5C31.5457 40.5 40.5 31.5457 40.5 20.5C40.5 9.4543 31.5457 0.5 20.5 0.5C9.4543 0.5 0.5 9.4543 0.5 20.5C0.5 31.5457 9.4543 40.5 20.5 40.5ZM20.5 9.38889C17.4818 9.38889 17.104 9.40101 15.9192 9.45556C14.7374 9.5101 13.9283 9.69798 13.2212 9.97172C12.4803 10.251 11.8091 10.6884 11.2545 11.2535C10.689 11.8084 10.2512 12.4799 9.97172 13.2212C9.69798 13.9283 9.50909 14.7364 9.45556 15.9202C9.40202 17.104 9.38889 17.4818 9.38889 20.5C9.38889 23.5172 9.40101 23.895 9.45556 25.0818C9.5101 26.2636 9.69798 27.0717 9.97172 27.7788C10.2508 28.5201 10.6883 29.1916 11.2535 29.7465C11.8089 30.3114 12.4807 30.7485 13.2222 31.0273C13.9293 31.302 14.7374 31.4909 15.9192 31.5444C17.104 31.598 17.4818 31.6111 20.5 31.6111C23.5182 31.6111 23.896 31.599 25.0818 31.5444C26.2636 31.4899 27.0717 31.302 27.7788 31.0273C28.5192 30.7485 29.1909 30.3121 29.7465 29.7465C30.3114 29.1911 30.7485 28.5193 31.0273 27.7778C31.302 27.0707 31.4909 26.2626 31.5444 25.0808C31.598 23.896 31.6111 23.5182 31.6111 20.5C31.6111 17.4828 31.599 17.1051 31.5444 15.9182C31.4899 14.7364 31.302 13.9283 31.0273 13.2212C30.7485 12.4798 30.3121 11.8091 29.7465 11.2545C29.1909 10.6889 28.5192 10.2515 27.7788 9.97172C27.0717 9.69798 26.2636 9.50909 25.0798 9.45556C23.896 9.40202 23.5182 9.38889 20.5 9.38889Z" fill="#333D3F"/>
-                                        </svg>draw_it_now
-                                        </a>
-                                    <a href="https://t.me/estellabuka" class="contact-social-link" target=”_blank”><svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M40.5 20.5C40.5 31.545 31.545 40.5 20.5 40.5C9.455 40.5 0.5 31.545 0.5 20.5C0.5 9.455 9.455 0.5 20.5 0.5C31.545 0.5 40.5 9.455 40.5 20.5ZM21.2167 15.265C19.2717 16.0733 15.3833 17.7483 9.55333 20.2883C8.60667 20.665 8.11 21.0333 8.065 21.3933C7.98833 22.0033 8.75167 22.2433 9.78833 22.5683C9.93 22.6133 10.0767 22.6583 10.2267 22.7083C11.2483 23.04 12.6217 23.4283 13.335 23.4433C13.9833 23.4567 14.7067 23.19 15.505 22.6433C20.9517 18.965 23.7633 17.1067 23.94 17.0667C24.065 17.0383 24.2383 17.0017 24.355 17.1067C24.4717 17.21 24.46 17.4067 24.4483 17.46C24.3717 17.7817 21.3817 20.5633 19.8317 22.0033C19.3483 22.4517 19.0067 22.77 18.9367 22.8433C18.78 23.005 18.62 23.16 18.4667 23.3083C17.5167 24.2217 16.8067 24.9083 18.5067 26.0283C19.3233 26.5667 19.9767 27.0117 20.6283 27.455C21.34 27.94 22.05 28.4233 22.97 29.0267C23.2033 29.18 23.4267 29.3383 23.645 29.4933C24.4733 30.085 25.2183 30.615 26.1383 30.5317C26.6717 30.4817 27.225 29.98 27.505 28.4817C28.1667 24.9383 29.47 17.265 29.7717 14.1017C29.79 13.839 29.7788 13.5751 29.7383 13.315C29.7141 13.1049 29.6118 12.9116 29.4517 12.7733C29.2133 12.5783 28.8433 12.5367 28.6767 12.54C27.925 12.5533 26.7717 12.955 21.2167 15.265V15.265Z" fill="#333D3F"/>
-                                        </svg>estellabuka
-                                        </a>
-                                    <a href="https://www.linkedin.com/in/oleksandra-kovalenko-0b437465" class="contact-social-link" target=”_blank”><svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M19.5 0.299805C8.896 0.299805 0.299999 8.89581 0.299999 19.4998C0.299999 30.1038 8.896 38.6998 19.5 38.6998C30.104 38.6998 38.7 30.1038 38.7 19.4998C38.7 8.89581 30.104 0.299805 19.5 0.299805ZM14.8 27.4578H10.912V14.9458H14.8V27.4578ZM12.832 13.4098C11.604 13.4098 10.81 12.5398 10.81 11.4638C10.81 10.3658 11.628 9.5218 12.882 9.5218C14.136 9.5218 14.904 10.3658 14.928 11.4638C14.928 12.5398 14.136 13.4098 12.832 13.4098ZM29 27.4578H25.112V20.5238C25.112 18.9098 24.548 17.8138 23.142 17.8138C22.068 17.8138 21.43 18.5558 21.148 19.2698C21.044 19.5238 21.018 19.8838 21.018 20.2418V27.4558H17.128V18.9358C17.128 17.3738 17.078 16.0678 17.026 14.9438H20.404L20.582 16.6818H20.66C21.172 15.8658 22.426 14.6618 24.524 14.6618C27.082 14.6618 29 16.3758 29 20.0598V27.4578Z" fill="#333D3F"/>
-                                        </svg>Oleksandra Kovalenko</a>
-                                </div>
-                            <div class="contact-buttons">
-                                <button class="button prime-btn" data-modal="enroll" onClick="showModal(this)">Записатися зараз</button>
-                                <button class="button second-btn" data-modal="payment" onClick="showModal(this)">Купити курс</button>
-                            </div>
+            <section class="flex container" id="contacts">
+                <div class="down-illustr-case">
+                    <div><img class="down-photo" src="img/photo_down.png" alt="nice photo ;)"></div>
+                </div>
+                <div class="contact-social">
+                        <p class="subtitle">будемо на зв’язку</p>
+                        <h2 class="main-title">Контакти</h2>
+                        <div class="contact-social-item">
+                            <a href="https://instagram.com/draw_it_now?igshid=YmMyMTA2M2Y=" class="contact-social-link" target=”_blank”><svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.5777 24.0512C20.7559 24.2997 19.8734 24.2552 19.0808 23.9253C18.5746 23.7153 18.1212 23.3958 17.7533 22.9896C17.3853 22.5834 17.112 22.1007 16.9531 21.5763C16.7941 21.0518 16.7534 20.4986 16.8339 19.9565C16.9143 19.4144 17.114 18.8969 17.4185 18.4413C17.723 17.9856 18.1247 17.6031 18.5948 17.3213C19.0648 17.0396 19.5915 16.8655 20.1369 16.8117C20.6823 16.7579 21.2328 16.8257 21.7488 17.0103C22.2649 17.1948 22.7336 17.4914 23.1212 17.8788C23.7293 18.4848 24.1081 19.2832 24.193 20.1375C24.2778 20.9918 24.0635 21.8491 23.5865 22.5629C23.1095 23.2767 22.3995 23.8028 21.5777 24.0512Z" fill="#333D3F"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 11.3909C23.4667 11.3909 23.8182 11.402 24.9899 11.4556C26.0737 11.5051 26.6616 11.6859 27.0535 11.8384C27.5361 12.0164 27.9727 12.3001 28.3313 12.6687C28.7202 13.0576 28.9596 13.4283 29.1616 13.9465C29.3141 14.3384 29.495 14.9263 29.5444 16.0101C29.598 17.1818 29.6091 17.5333 29.6091 20.5C29.6091 23.4667 29.598 23.8182 29.5444 24.9899C29.495 26.0737 29.3141 26.6616 29.1616 27.0535C28.9838 27.5354 28.7 27.9727 28.3313 28.3313C27.9424 28.7202 27.5717 28.9596 27.0535 29.1616C26.6616 29.3141 26.0737 29.495 24.9899 29.5444C23.8182 29.598 23.4677 29.6091 20.5 29.6091C17.5323 29.6091 17.1818 29.598 16.0101 29.5444C14.9263 29.495 14.3384 29.3141 13.9465 29.1616C13.4646 28.9838 13.0273 28.7 12.6687 28.3313C12.3 27.9727 12.0162 27.5354 11.8384 27.0535C11.6859 26.6616 11.5051 26.0737 11.4556 24.9899C11.402 23.8182 11.3909 23.4667 11.3909 20.5C11.3909 17.5333 11.402 17.1818 11.4556 16.0101C11.5051 14.9263 11.6859 14.3384 11.8384 13.9465C12.0163 13.4639 12.3 13.0273 12.6687 12.6687C13.0576 12.2798 13.4283 12.0404 13.9465 11.8384C14.3384 11.6859 14.9263 11.5051 16.0101 11.4556C17.1818 11.402 17.5333 11.3909 20.5 11.3909ZM18.3144 15.2236C17.6215 15.5106 16.9919 15.9313 16.4616 16.4616C15.3906 17.5327 14.7889 18.9853 14.7889 20.5C14.7889 22.0147 15.3906 23.4673 16.4616 24.5384C17.5327 25.6094 18.9853 26.2111 20.5 26.2111C22.0147 26.2111 23.4673 25.6094 24.5384 24.5384C25.0687 24.0081 25.4894 23.3785 25.7764 22.6856C26.0634 21.9927 26.2111 21.25 26.2111 20.5C26.2111 19.75 26.0634 19.0074 25.7764 18.3144C25.4894 17.6215 25.0687 16.9919 24.5384 16.4616C24.0081 15.9313 23.3785 15.5106 22.6856 15.2236C21.9927 14.9366 21.25 14.7889 20.5 14.7889C19.75 14.7889 19.0074 14.9366 18.3144 15.2236ZM27.7872 15.201C27.7144 15.3663 27.6092 15.5154 27.4778 15.6394C27.2222 15.8805 26.8827 16.0125 26.5314 16.0074C26.1801 16.0023 25.8446 15.8604 25.5961 15.612C25.3477 15.3635 25.2058 15.028 25.2007 14.6767C25.1956 14.3254 25.3276 13.9859 25.5687 13.7303C25.6927 13.5989 25.8417 13.4937 26.0071 13.4209C26.1725 13.3481 26.3507 13.3093 26.5314 13.3067C26.712 13.304 26.8914 13.3377 27.0588 13.4056C27.2262 13.4735 27.3783 13.5743 27.506 13.7021C27.6338 13.8298 27.7346 13.9819 27.8025 14.1493C27.8704 14.3167 27.9041 14.4961 27.9014 14.6767C27.8988 14.8573 27.8599 15.0356 27.7872 15.201Z" fill="#333D3F"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 40.5C31.5457 40.5 40.5 31.5457 40.5 20.5C40.5 9.4543 31.5457 0.5 20.5 0.5C9.4543 0.5 0.5 9.4543 0.5 20.5C0.5 31.5457 9.4543 40.5 20.5 40.5ZM20.5 9.38889C17.4818 9.38889 17.104 9.40101 15.9192 9.45556C14.7374 9.5101 13.9283 9.69798 13.2212 9.97172C12.4803 10.251 11.8091 10.6884 11.2545 11.2535C10.689 11.8084 10.2512 12.4799 9.97172 13.2212C9.69798 13.9283 9.50909 14.7364 9.45556 15.9202C9.40202 17.104 9.38889 17.4818 9.38889 20.5C9.38889 23.5172 9.40101 23.895 9.45556 25.0818C9.5101 26.2636 9.69798 27.0717 9.97172 27.7788C10.2508 28.5201 10.6883 29.1916 11.2535 29.7465C11.8089 30.3114 12.4807 30.7485 13.2222 31.0273C13.9293 31.302 14.7374 31.4909 15.9192 31.5444C17.104 31.598 17.4818 31.6111 20.5 31.6111C23.5182 31.6111 23.896 31.599 25.0818 31.5444C26.2636 31.4899 27.0717 31.302 27.7788 31.0273C28.5192 30.7485 29.1909 30.3121 29.7465 29.7465C30.3114 29.1911 30.7485 28.5193 31.0273 27.7778C31.302 27.0707 31.4909 26.2626 31.5444 25.0808C31.598 23.896 31.6111 23.5182 31.6111 20.5C31.6111 17.4828 31.599 17.1051 31.5444 15.9182C31.4899 14.7364 31.302 13.9283 31.0273 13.2212C30.7485 12.4798 30.3121 11.8091 29.7465 11.2545C29.1909 10.6889 28.5192 10.2515 27.7788 9.97172C27.0717 9.69798 26.2636 9.50909 25.0798 9.45556C23.896 9.40202 23.5182 9.38889 20.5 9.38889Z" fill="#333D3F"/>
+                                </svg>draw_it_now
+                                </a>
+                            <a href="https://t.me/estellabuka" class="contact-social-link" target=”_blank”><svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M40.5 20.5C40.5 31.545 31.545 40.5 20.5 40.5C9.455 40.5 0.5 31.545 0.5 20.5C0.5 9.455 9.455 0.5 20.5 0.5C31.545 0.5 40.5 9.455 40.5 20.5ZM21.2167 15.265C19.2717 16.0733 15.3833 17.7483 9.55333 20.2883C8.60667 20.665 8.11 21.0333 8.065 21.3933C7.98833 22.0033 8.75167 22.2433 9.78833 22.5683C9.93 22.6133 10.0767 22.6583 10.2267 22.7083C11.2483 23.04 12.6217 23.4283 13.335 23.4433C13.9833 23.4567 14.7067 23.19 15.505 22.6433C20.9517 18.965 23.7633 17.1067 23.94 17.0667C24.065 17.0383 24.2383 17.0017 24.355 17.1067C24.4717 17.21 24.46 17.4067 24.4483 17.46C24.3717 17.7817 21.3817 20.5633 19.8317 22.0033C19.3483 22.4517 19.0067 22.77 18.9367 22.8433C18.78 23.005 18.62 23.16 18.4667 23.3083C17.5167 24.2217 16.8067 24.9083 18.5067 26.0283C19.3233 26.5667 19.9767 27.0117 20.6283 27.455C21.34 27.94 22.05 28.4233 22.97 29.0267C23.2033 29.18 23.4267 29.3383 23.645 29.4933C24.4733 30.085 25.2183 30.615 26.1383 30.5317C26.6717 30.4817 27.225 29.98 27.505 28.4817C28.1667 24.9383 29.47 17.265 29.7717 14.1017C29.79 13.839 29.7788 13.5751 29.7383 13.315C29.7141 13.1049 29.6118 12.9116 29.4517 12.7733C29.2133 12.5783 28.8433 12.5367 28.6767 12.54C27.925 12.5533 26.7717 12.955 21.2167 15.265V15.265Z" fill="#333D3F"/>
+                                </svg>estellabuka
+                                </a>
+                            <a href="https://www.linkedin.com/in/oleksandra-kovalenko-0b437465" class="contact-social-link" target=”_blank”><svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.5 0.299805C8.896 0.299805 0.299999 8.89581 0.299999 19.4998C0.299999 30.1038 8.896 38.6998 19.5 38.6998C30.104 38.6998 38.7 30.1038 38.7 19.4998C38.7 8.89581 30.104 0.299805 19.5 0.299805ZM14.8 27.4578H10.912V14.9458H14.8V27.4578ZM12.832 13.4098C11.604 13.4098 10.81 12.5398 10.81 11.4638C10.81 10.3658 11.628 9.5218 12.882 9.5218C14.136 9.5218 14.904 10.3658 14.928 11.4638C14.928 12.5398 14.136 13.4098 12.832 13.4098ZM29 27.4578H25.112V20.5238C25.112 18.9098 24.548 17.8138 23.142 17.8138C22.068 17.8138 21.43 18.5558 21.148 19.2698C21.044 19.5238 21.018 19.8838 21.018 20.2418V27.4558H17.128V18.9358C17.128 17.3738 17.078 16.0678 17.026 14.9438H20.404L20.582 16.6818H20.66C21.172 15.8658 22.426 14.6618 24.524 14.6618C27.082 14.6618 29 16.3758 29 20.0598V27.4578Z" fill="#333D3F"/>
+                                </svg>Oleksandra Kovalenko</a>
                         </div>
+                    <div class="contact-buttons">
+                        <button class="button prime-btn" data-modal="enroll" onClick="showModal(this)">Записатися зараз</button>
+                        <button class="button second-btn" data-modal="payment" onClick="showModal(this)">Купити курс</button>
                     </div>
                 </div>
             </section>

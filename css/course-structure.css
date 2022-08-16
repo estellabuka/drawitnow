@@ -1,19 +1,10 @@
-.course-structure__body {
-    max-width: 1214px;
-    margin: 0 auto;
-}
-.course-structure__title {
-    margin-left: 20px;
-}
-.cards-top {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
+.course-structure__cards {
+    flex-wrap: wrap;
 }
 .cards-top__body {
-    flex: 1 1 48%;
+    flex: 0 0 48%;
     background: linear-gradient(95.6deg, #FFE7D9 12.37%, #FFEBB7 35.9%, #EDF493 65.82%, #D2FFAF 88.95%);
-    margin: 20px;
+    margin: 0 0 40px;
     border-radius: 60px;
 }
 .cards-top__title {
@@ -41,18 +32,12 @@
 }
 
 /********* BOTTOM **********/
-.cards-bottom {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
 .card-bottom__body-small {
-    flex: 1 1 39%;
+    flex: 0 0 39%;
     background: linear-gradient(95.6deg, #FFE7D9 12.37%, #FFEBB7 35.9%, #EDF493 65.82%, #D2FFAF 88.95%);
     border-radius: 60px;
     padding: 2px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin: 0 0 40px;
     
 }
 .card-bottom__column {
@@ -75,16 +60,14 @@
     margin-bottom: 10px;
    }
 .card-bottom__body-big {
-    flex: 1 1 57%;
+    flex: 0 0 57%;
     background: linear-gradient(95.6deg, #FFE7D9 12.37%, #FFEBB7 35.9%, #EDF493 65.82%, #D2FFAF 88.95%);
     border-radius: 60px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 0 40px;
     padding: 2px;
 }
 /****** BUTTONS ******/
 .course-structure__buttons {
     display: flex;
     justify-content: center;
-    margin-bottom: 120px;
 }

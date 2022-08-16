@@ -1,8 +1,4 @@
 .contact {
-    margin-top: 240px;
-}
-
-.contact-box {
     display: flex;
     justify-content: center;
 }

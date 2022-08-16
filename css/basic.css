@@ -114,7 +114,19 @@ body {
   .second-btn:hover {
     background: linear-gradient(95.6deg, #FFE7D9 12.37%, #FFEBB7 35.9%, #EDF493 65.82%, #D2FFAF 88.95%);
   }
-  
+  .attention {
+    position: fixed;
+    width: 100%;
+    background: #333D3F;
+    padding: 10px;
+    text-align: center;
+    z-index: 999;
+    left: 0;
+    bottom: 0;
+  }
+  .attention .subtitle {
+    color: #fff;
+  }
   /*Typography RESPONSIVE*/
   
   @media only screen

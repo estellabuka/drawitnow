@@ -1,12 +1,4 @@
 /*Тобі підійде...*/
-
-.list-for-you {
-    max-width: 1214px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 120px auto;
-  }
   /*Резерв места под картинку*/
   .qualities-image {
     margin-right: 47px;

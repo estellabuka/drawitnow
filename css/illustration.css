@@ -3,6 +3,7 @@
     height: 577px;
     background: url(../img/blot.png) 0 0px/100% 100% no-repeat;
     margin-right: 47px;
+    align-self: center;
   }
   .laptop-photo{
     display: block;
@@ -17,6 +18,7 @@
     height: 500px;
     background: url(../img/blot_yellow_green.png) 0 5px/100% 100% no-repeat;
     width: calc(100% / 2);
+    align-self: center;
     }
   .cofee-photo {
     display: block;

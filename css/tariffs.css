@@ -1,10 +1,6 @@
 
 /* Start writing the page */
 
-.tariffs {
-    margin-top: 120px;
-}
-
 /* Heading */
 
 .tariffs__sub-heading {
@@ -28,21 +24,13 @@
 
 /* Cards group */
 
-.tariffs__card {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
 
 /* Cards item */
 
 .card-item {
     position: relative;
-    max-width: 370px;
-    min-height: 840px;
-    width: 100%;
-    margin: 10px 17px;
+    flex: 0 0 30%;
+    margin: 10px 0;
     border-radius: 60px;
     background: white;
 }

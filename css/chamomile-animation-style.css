@@ -1,15 +1,6 @@
 /*--- More about course' section ---*/
-.about-course {
-  display: flex;
-  justify-content: space-between;
-  margin: 120px auto;
-  max-width: 1214px;
-  overflow: hidden;
-  scroll-padding-top: 120px;
-}
 .about-course-text {
   flex: 0 1 550px;
-  padding-left: 1%;
 }
 .margin-bottom {
   margin-bottom: 40px;

@@ -1,14 +1,14 @@
 .promo{
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     background: url("../img/promo_bg.png") no-repeat bottom;
-    background-size: auto 50vh;
-    padding: 100px 0 23vh;
+    background-size: 100% auto;
+    padding: 100px 0 0;
 }
 .promo_text{
     text-align: left;
     position: relative;
-    bottom: 23vh;
+    top: -180px;
 }
 
 .scroll_icon{
@@ -27,6 +27,17 @@
     background: white;
     overflow: hidden;
     /*animation: night 20s infinite;*/
+}
+.animation_wrapper:before {
+    content: "";
+    position: absolute;
+    top: 118px;
+    left: 50px;
+    width: 385px;
+    height: 60px;
+    z-index: 10;
+    background: linear-gradient(180deg, #FFFFFF 16.07%, rgba(255, 255, 255, 0) 100%);
+
 }
 /*animation_wrapper:after {
     content:"";
@@ -315,5 +326,16 @@
     100% {
         transform: scale(1);
         bottom: 27px;
+    }
+}
+@media (max-width: 1100px) {
+    .animation_wrapper {
+        display: none;
+    }
+    .promo {
+        min-height: unset;
+    }
+    .promo_text {
+        top: 0;
     }
 }
