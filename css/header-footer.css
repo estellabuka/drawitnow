@@ -1,3 +1,8 @@
+:target {
+    scroll-margin-top: 120px;
+}
+
+
 .container {
     max-width: 1254px;
     margin: 0 auto;
@@ -124,6 +129,10 @@
     margin-top: 20px;
 }
 
+.footer-text b {
+    font-weight: 700;
+}
+
 .footer-contacts {
     padding-top: 75px;
 }
@@ -199,7 +208,7 @@
         position: absolute;
         width: 26px;
         height: 2px;
-        background-color: #333D3F;
+        background-color: #8ABD63;
         transition-duration: 1s;
         right: 0;
     }
