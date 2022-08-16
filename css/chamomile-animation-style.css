@@ -5,6 +5,7 @@
   margin: 120px auto;
   max-width: 1214px;
   overflow: hidden;
+  scroll-padding-top: 120px;
 }
 .about-course-text {
   flex: 0 1 550px;
