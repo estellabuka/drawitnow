@@ -1,17 +1,22 @@
 .laptop-case{
-    width: 503px;
-    height: 577px;
+    width: 41.43%;
+    height: 47.53%;
     background: url(../img/blot.png) 0 0px/100% 100% no-repeat;
     margin-right: 47px;
     align-self: center;
   }
+  @media (max-width: 900px) {
+    .laptop-case{
+      width: 100%;
+    }
+  }
   .laptop-photo{
     display: block;
     position: relative;
-    width: 450px;
+    width: 89.46%;
     height: 100%;
-    top: 50px;
-    left: 10px;
+    top: 8.66%;
+    left: 1.99%;
   }
   .cofee-case {
     width: 600px;
