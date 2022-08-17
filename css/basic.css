@@ -123,10 +123,23 @@ body {
     z-index: 999;
     left: 0;
     bottom: 0;
+    white-space: nowrap;
   }
   .attention .subtitle {
     color: #fff;
+    display: inline-block;
+    margin-bottom: 0;
+    padding-left: 100%;
+    animation: scroll 20s infinite linear;
   }
+  @keyframes scroll {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0)
+    }
+
   /*Typography RESPONSIVE*/
   
   @media only screen
