@@ -1,22 +1,24 @@
-.laptop-case{
-    width: 41.43%;
-    height: 47.53%;
-    background: url(../img/blot.png) 0 0px/100% 100% no-repeat;
-    margin-right: 47px;
+  .img-holder {
+      flex: 0 0 40%;
+      position: relative;
+      align-self: flex-end;
+  }
+  .img-holder.img-center {
     align-self: center;
   }
-  @media (max-width: 900px) {
-    .laptop-case{
+  .img-resp {
+      display: block;
       width: 100%;
-    }
+      height: auto;
   }
+
   .laptop-photo{
+    align-items: center;
     display: block;
     position: relative;
-    width: 89.46%;
-    height: 100%;
-    top: 8.66%;
-    left: 1.99%;
+    flex: 0 0 40%;
+    width: 40%;
+    height: auto;
   }
   .cofee-case {
     width: 49.42%;

@@ -77,3 +77,9 @@ float: none;
 height: unset;
 min-height: unset;
 }
+@media (max-width: 1024px) {
+    .next-arrow,
+    .prev-arrow {
+        display: none !important;
+    }
+}

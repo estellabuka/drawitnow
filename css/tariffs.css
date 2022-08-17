@@ -33,6 +33,8 @@
     margin: 10px 0;
     border-radius: 60px;
     background: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-border {
@@ -63,10 +65,10 @@
 
 .card-main {
     margin: 40px 35px 30px;
-    height: 66%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-grow: 1;
 }
 
 
@@ -92,74 +94,34 @@
     justify-content: center;
 }
 
-
-.price-main,
-.price-main-second,
-.price-main-third {
+.price {
     position: relative;
     padding: 0 15px;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.price-main {
     text-transform: uppercase;
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 800;
     font-size: 32px;
     line-height: 120%;
+    padding: 0 5px;
+    flex: 0 0 30%;
 }
-
-
-.price-main-second::before {
-    content: '1000грн';
-    text-transform: none;
-    position: absolute;
-    top: 30%;
-    right: 100%;
+.price-alt {
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 140%;
+    padding: 0 5px;
+    flex: 0 0 30%;
 }
-
-.price-main-second::after {
-    content: '32€';
-    text-transform: none;
-    position: absolute;
-    top: 30%;
-    left: 100%;
-    font-family: 'Roboto Slab';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 140%;
-}
-
-.price-main-third::before {
-    content: '9000грн';
-    text-transform: none;
-    position: absolute;
-    top: 30%;
-    right: 100%;
-    font-family: 'Roboto Slab';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 140%;
-}
-
-.price-main-third::after {
-    content: '285€';
-    text-transform: none;
-    position: absolute;
-    top: 30%;
-    left: 100%;
-    font-family: 'Roboto Slab';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 140%;
-}
-
-
 .sub-price {
     margin-top: 15px;
     text-align: center;
@@ -225,4 +187,29 @@
 
 .btn-absolute {
     z-index: 1;
+}
+@media (max-width: 900px) {
+    .card-item {
+        margin: 0 0 40px;
+    }
+    .card-border {
+        max-width: unset;
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+    .card-top {
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 20px;
+    }
+    .card-top {
+        min-height: unset;
+    }
+    .card-name {
+        padding: 0;
+    }
+    .card-price {
+        margin-top: 10px;
+    }
 }

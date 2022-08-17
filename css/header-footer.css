@@ -76,11 +76,13 @@
 .footer {
     background: url('../img/bg-footer.jpg');
     margin-top: 130px;
+    padding-bottom: 60px;
 }
 
 .header .container,
 .footer .container {
     margin: 0 auto;
+    position: static;
 }
 
 .footer svg:hover * {
@@ -92,6 +94,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 105px 0 55px;
+    border-bottom: 2px solid #8ABD63;
 }
 
 .footer-nav .menu-item + .menu-item {
@@ -115,6 +118,7 @@
 }
 
 .footer-text {
+    flex: 0 0 50%;
     padding-top: 60px;
 }
 
@@ -272,6 +276,9 @@
     }
     .menubox .button {
         margin: 60px 0 0 0;
+    }
+    .footer-wrapper {
+        display: none;
     }
     .footer-items {
         padding-bottom: 40px;

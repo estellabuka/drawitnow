@@ -23,20 +23,20 @@
   position: absolute;
   right: 24px;
   bottom: 31px;
+  display: flex;
+  align-items: center;
 }
-.photo-in .icon-about:hover svg * {
+
+.icon-about svg {
+  margin: 0 5px 0 0;
+}
+.icon-about svg *{
+ fill: #333D3F;
+}
+.icon-about:hover svg * {
  fill: #8ABD63;
  cursor: pointer;
 }
-.photo-in .icon-about svg *{
- fill: #333D3F;
-}
-.icon-about::after {
-  content: 'LinkedIn';
-  position: absolute;
-  right: 50px;
-  bottom: 13px;
- }
 .facts-box{
   flex-wrap: wrap;
 }

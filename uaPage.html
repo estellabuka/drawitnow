@@ -334,8 +334,8 @@
 
             <!-- 'It's for you if' section -->
             <section class="flex container">
-                <div class="laptop-case">
-                    <div><img class="laptop-photo" src="img/pic1.png" alt="laptop !3"></div>
+                <div class="img-holder img-center">
+                    <img class="img-resp" src="img/pic1.png" alt="laptop !3">
                 </div>
                 <div class="qualities-text">
                     <p class="subtitle">Для кого курс?</p>
@@ -380,14 +380,16 @@
                             <button class="button second-btn" data-modal="payment" onClick="showModal(this)">Купити курс</button>
                         </div>
                     </div>
-                    <div class="photo-in">
-                        <div><img class="photo-with-in" src="img/photo_about_me.png" alt="тут має бути красива фотка"></div>
+                    <div class="img-holder">
+                        <img class="img-resp" src="img/pic2.png" alt="">
                         <a class="icon-about" target="_blank" href="https://www.linkedin.com/in/oleksandra-kovalenko-0b437465">
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20 0.799805C9.39599 0.799805 0.799988 9.39581 0.799988 19.9998C0.799988 30.6038 9.39599 39.1998 20 39.1998C30.604 39.1998 39.2 30.6038 39.2 19.9998C39.2 9.39581 30.604 0.799805 20 0.799805ZM15.3 27.9578H11.412V15.4458H15.3V27.9578ZM13.332 13.9098C12.104 13.9098 11.31 13.0398 11.31 11.9638C11.31 10.8658 12.128 10.0218 13.382 10.0218C14.636 10.0218 15.404 10.8658 15.428 11.9638C15.428 13.0398 14.636 13.9098 13.332 13.9098ZM29.5 27.9578H25.612V21.0238C25.612 19.4098 25.048 18.3138 23.642 18.3138C22.568 18.3138 21.93 19.0558 21.648 19.7698C21.544 20.0238 21.518 20.3838 21.518 20.7418V27.9558H17.628V19.4358C17.628 17.8738 17.578 16.5678 17.526 15.4438H20.904L21.082 17.1818H21.16C21.672 16.3658 22.926 15.1618 25.024 15.1618C27.582 15.1618 29.5 16.8758 29.5 20.5598V27.9578Z" fill="#8ABD63"/>
                             </svg>
+                            LinkedIn
                         </a>
                     </div>
+                    
                 </div>
              <!-- 'Teacher's facts' section -->
                 <div class="facts-box flex">
@@ -515,7 +517,9 @@
                         <div class="card-top first-card">
                           <p class="card-name">Самостійний</p>
                           <div class="card-price">
-                            <p class="price-main">free</p>
+                            <p class="price">
+                                <span class="price-main">free</span>
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -548,7 +552,11 @@
                         <div class="card-top second-card">
                           <p class="card-name">Командний</p>
                           <div class="card-price">
-                            <p class="price-main-second">$34</p>
+                            <p class="price">
+                                <span class="price-alt">1000грн</span>
+                                <span class="price-main">$34</span>
+                                <span class="price-alt">32€</span>
+                            </p>
                           </div>
                           <p class="sub-price">за весь курс</p>
                         </div>
@@ -590,7 +598,13 @@
                         <div class="card-top third-card">
                           <p class="card-name">Розширений</p>
                           <div class="card-price">
-                            <p class="price-main-third">$300</p>
+
+
+                            <p class="price">
+                                <span class="price-alt">9000грн</span>
+                                <span class="price-main">$300</span>
+                                <span class="price-alt">285€</span>
+                            </p>
                           </div>
                           <p class="sub-price">за весь курс</p>
                         </div>
@@ -644,8 +658,8 @@
                         <button class="button second-btn" data-modal="payment" onClick="showModal(this)">Купити курс</button>
                     </div>
                 </div>
-                <div class="cofee-case">
-                    <div><img class="cofee-photo" src="img/cup_photo.png" alt="cofe 8*"></div>
+                <div class="img-holder img-center">
+                    <img class="img-resp" src="img/pic3.png" alt="cofe 8*">
                 </div>
             </section>
             <!-- Feedbacks section -->
@@ -697,8 +711,8 @@
             </section>
             <!-- Contacts section -->
             <section class="flex container" id="contacts">
-                <div class="down-illustr-case">
-                    <div><img class="down-photo" src="img/photo_down.png" alt="nice photo ;)"></div>
+                <div class="img-holder">
+                    <img class="img-resp" src="img/pic4.png" alt="nice photo ;)">
                 </div>
                 <div class="contact-social">
                         <p class="subtitle">будемо на зв’язку</p>
@@ -766,12 +780,11 @@
                         </a>
                     </div>
                 </div>
-                <div class="footer-line"></div>
                 <div class="footer-items">
                     <div class="footer-text">
                         <p>Я впевнена, що неможливо навчит<b>И</b>, можна тільки навчит<b>ИСЯ</b>.</p>
-                        <p>Тому моє завдання забезпечити вас цікавими проектами <br> й допомогти не затонути в величезному потоці інформації.</p>
-                        <p>Але ж ваш успіх на 100% залежить від того, наскільки <br> ви готові старанно працювати.</p>
+                        <p>Тому моє завдання забезпечити вас цікавими проектами й допомогти не затонути в величезному потоці інформації.</p>
+                        <p>Але ж ваш успіх на 100% залежить від того, наскільки ви готові старанно працювати.</p>
                     </div>
                     <div class="footer-contacts">
                         <div class="footer-social">
