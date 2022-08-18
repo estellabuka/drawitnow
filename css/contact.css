@@ -34,3 +34,18 @@
 .contact-social-link:hover svg * {
     fill: #8ABD63;
 }
+
+@media (max-width: 590px) {
+.contact-social {
+    max-width: unset;
+    width: 100%;
+    }
+}
+@media (max-width: 526px) {
+    .contact-social .act {
+        display: none;
+    }
+    .contact-social-item {
+        margin: 0 auto;  
+    }
+}
