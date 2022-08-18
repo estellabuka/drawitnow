@@ -22,8 +22,8 @@
     font-size: 14px;
     color: #878787;
 }
-
-.path-image {
-    width: calc(100% / 2);
-    background: linear-gradient(95.6deg, #FFE7D9 12.37%, #FFEBB7 35.9%, #EDF493 65.82%, #D2FFAF 88.95%);
+@media (max-width: 900px) {
+    .path-main-text {
+        width: 100%;
+    }
 }
