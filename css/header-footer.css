@@ -105,12 +105,6 @@
     padding: 0;
 }
 
-.footer-line {
-    height: 2px;
-    width: 100%;
-    background: #8ABD63;
-}
-
 .footer-items {
     display: flex;
     justify-content: space-between;
@@ -134,9 +128,6 @@
     padding-top: 75px;
 }
 
-.footer-wrapper .footer-social {
-    display: none;
-}
 
 .footer-social {
     display: flex;
@@ -283,9 +274,6 @@
     .footer-items {
         padding-bottom: 40px;
     }
-    .footer-text br {
-        display: none;
-    }
     .footer-text {
         max-width: 400px;
         padding-top: 60px;
@@ -335,9 +323,6 @@
     }
     .footer-wrapper {
         padding: 40px 0 20px;
-    }
-    .footer-wrapper .footer-social {
-        display: block;
     }
     .footer-items {
         padding-bottom: 93px;
