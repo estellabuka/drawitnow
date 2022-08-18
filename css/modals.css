@@ -65,6 +65,10 @@
     caret-color: #8ABD63;
 }
 
+.modal_input._error {
+    box-shadow: 0 0 15px red;
+}
+
 .modal_input:focus {
     outline: none !important;
     box-shadow: 0 0 0 2px #8ABD63;
