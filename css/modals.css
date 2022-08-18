@@ -54,6 +54,10 @@
     position: relative;
     max-width: 356px;
 }
+.modal_inputWrapper.file_inputWrapper {
+    background: 0;
+    width: auto;
+}
 
 .modal_input {
     display: block;
@@ -64,7 +68,24 @@
     width: 100%;
     caret-color: #8ABD63;
 }
-
+.modal_input.file-input {
+    position: relative;
+    z-index: 1;
+    padding: 10px 0 0;
+    width: auto;
+}
+.file-check {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    width: 115px;
+    height: 100%;
+    opacity: 0;
+    font-size: 0;
+    z-index: 2;
+    cursor: pointer;
+}
 .modal_input._error {
     box-shadow: 0 0 15px red;
 }
@@ -85,6 +106,9 @@
     color: #878787;
     font-size: 14px;
     display: none;
+}
+.modal_inputLabel.file-label {
+    display: block;
 }
 
 .modal_inputDescription {
