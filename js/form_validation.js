@@ -122,4 +122,33 @@ document.addEventListener('DOMContentLoaded', function () {
 	function tgTest(input) {
 		return !/^@[\w-]/.test(input.value);
 	}
+
+    //formPreview
+    const formImage = document.getElementById('formImage');
+    const formPreview = document.getElementById('formPreview');
+
+    formImage.addEventListener('change', () => {
+        uploadFile(formImage.files[0]);
+    });
+
+    function uploadFile(file) {
+        if (!['image/jpeg', 'image/png', 'image/gif'].includes(file.type)) {
+            alert('Завантажити можна лише зображення');
+            formImage.value = '';
+            return;
+        }
+        if (file.size > 2 * 1024 * 1024) {
+            alert('Розмір файлу не повинен перевищувати 2МБ');
+            return;
+        }
+
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            formPreview.innerHTML = `<img src ="${e.target.result}" alt="screenshot">`;
+        };
+        reader.onerror = function (e) {
+            alert('Неможливо відобразити фото');
+        };
+        reader.readAsDataURL(file);
+    }
 });
