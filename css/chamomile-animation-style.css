@@ -152,6 +152,16 @@
     }
   }
   @media only screen
+  and (max-width: 900px) {
+    .margin-bottom {
+      margin-bottom: 20px;
+      }
+    .act {
+      display: block;
+      max-width: 100%;
+    }
+  }
+  @media only screen
   and (max-width: 700px) {
     .about-course-text {
       padding: 0;
@@ -162,4 +172,9 @@
     .margin-bottom {
       margin-bottom: 20px;
       }
+    .act {
+      display: block;
+      max-width: 100%;
+      margin: 0 auto;
+    }
   }

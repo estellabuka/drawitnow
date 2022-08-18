@@ -139,12 +139,15 @@ body {
     100% {
         transform: translate(-100%, 0)
     }
-
+  }
   /*Typography RESPONSIVE*/
-  
-  @media only screen
-  
-  and (max-width: 799px) {
+
+@media (max-width: 900px) {
+  .button {
+    margin: 10px;
+    }
+  }
+@media (max-width: 799px) {
     .main-title {
       font-size: 36px;
     }
@@ -152,3 +155,4 @@ body {
       font-size: 28px;
     }
   }
+ 

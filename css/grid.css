@@ -12,4 +12,7 @@
     .flex {
         display: block;
     }
+    .container {
+        margin: 0 auto 80px;
+    }
 }
