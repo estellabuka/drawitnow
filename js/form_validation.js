@@ -10,8 +10,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		let error = formValidate(shortForm);
 
-		if (error === 0) {
+        let formData = new FormData(shortForm);
+        formData.append('image', formImage.files[0]);
 
+		if (error === 0) {
+            const formBox = document.querySelector('#shortFormBox');
+            formBox.classList.add('_sending');
+            let response = await fetch('sendmail.php', {
+                method: 'POST',
+                body: formData
+            });
+            if (response.ok) {
+                let result = await response.json();
+                alert(result.message);
+                formPreview.innerHTML = '';
+                form.reset();
+                formBox.classList.remove('_sending');
+            } else {
+                alert("Помилка! Не вдалося відправити форму");
+                formBox.classList.remove('_sending');
+            }
 		} else {
 			alert("Будь ласка, перевірте коректність даних!");
 		}
@@ -72,8 +90,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		let error = formValidate(payForm);
 
-		if (error === 0) {
+        let formData = new FormData(payForm);
+        formData.append('image', formImage.files[0]);
 
+		if (error === 0) {
+            const formBox = document.querySelector('#payFormBox');
+            formBox.classList.add('_sending');
+            let response = await fetch('sendmail.php', {
+                method: 'POST',
+                body: formData
+            });
+            if (response.ok) {
+                let result = await response.json();
+                alert(result.message);
+                formPreview.innerHTML = '';
+                form.reset();
+                formBox.classList.remove('_sending');
+            } else {
+                alert("Помилка! Не вдалося відправити форму");
+                formBox.classList.remove('_sending');
+            }
 		} else {
 			alert("Будь ласка, перевірте коректність даних!");
 		}
