@@ -286,6 +286,12 @@
     }
 }
 
+@media only screen and (max-width: 900px) {
+    .header-wrapper .button {
+        margin: 0 50px 0 0;
+    }
+}
+
 @media only screen and (max-width: 890px) {
     .footer-items {
         padding-bottom: 20px;
@@ -343,6 +349,9 @@
 }
 
 @media only screen and (max-width: 526px) {
+    .header {
+        padding: 32px 0;
+    }
     .header-wrapper {
         justify-content: center;
     }
