@@ -1,0 +1,14 @@
+.footer .icon svg * {
+fill: #8ABD63;
+}
+.icon:hover {
+    cursor: pointer;
+}
+.icon:hover svg * {
+    fill: #8ABD63;
+}
+.footer .icon:hover svg * {
+    fill: #333D3F;
+}
+
+    

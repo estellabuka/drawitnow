@@ -1,0 +1,29 @@
+.container {
+    max-width: 1294px;
+    margin: 0 auto 120px;
+    padding: 0 40px;
+    position: relative;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.margin-bottom {
+    margin-bottom: 40px;
+}
+@media (max-width: 991px) {
+    .flex {
+        display: block;
+    }
+    .container {
+        margin: 0 auto 80px;
+    }
+    .margin-bottom {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 526px) {
+    .container {
+        padding: 0 20px;
+    }
+}

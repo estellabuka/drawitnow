@@ -1,0 +1,41 @@
+.text-photo-box{
+  margin-bottom: 80px;
+}
+.icon-about{
+  position: absolute;
+  right: 24px;
+  bottom: 31px;
+  display: flex;
+  align-items: center;
+}
+.icon-about svg {
+  margin: 0 5px 0 0;
+}
+.icon-about svg *{
+ fill: #333D3F;
+}
+.icon-about:hover svg * {
+ fill: #8ABD63;
+ cursor: pointer;
+}
+.facts-box{
+  flex-wrap: wrap;
+}
+.fact-cards{
+  min-height: 170px;
+  flex: 0 0 30%;
+  display: flex;
+  align-items: center;
+  background: url(../img/brush-effect-yellow.png) 0 0/142px 170px no-repeat;
+  position: relative;
+  padding-left: 90px;
+}
+@media (max-width: 991px) {
+  .text-photo-box {
+    margin-bottom: 40px;
+  }
+  .text-box {
+    margin: 0 auto;
+  }
+}
+  

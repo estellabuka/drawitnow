@@ -1,11 +1,16 @@
-body {
-	display: flex;
-	min-height: 100vh;
-	align-items: center;
-	justify-content: center;
-	margin: 0;
-}
-.title {
-  color: #9DB0D1;
-  font: 60px Helvetica, Arial, sans-serif;
-}
+@import 'reset.css';
+@import 'grid.css';
+@import 'basic.css';
+@import 'icons.css';
+@import 'header-footer.css';
+@import 'qualities-list.css';
+@import 'tariffs.css';
+@import 'start-path.css';
+@import 'course-structure.css';
+@import 'feedback.css';
+@import 'contact.css';
+@import 'modals.css';
+@import 'horse.css'; /*promo section*/
+@import 'chamomile-animation-style.css';
+@import 'about-teacher-facts.css';
+@import 'illustration.css';

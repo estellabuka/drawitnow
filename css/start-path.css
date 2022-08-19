@@ -1,0 +1,14 @@
+.path-main-part {
+    display: flex;
+    justify-content: space-between;
+}
+
+.path-text-item {
+    margin-bottom: 15px;
+}
+
+.path-text-item-bottom {
+    margin: 30px 100px 40px 0;
+    font-size: 14px;
+    color: #878787;
+}

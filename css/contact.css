@@ -1,0 +1,45 @@
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-image {
+    max-width: calc( 100% / 2);
+    width: 100%;
+    background: linear-gradient(95.6deg, #FFE7D9 12.37%, #FFEBB7 35.9%, #EDF493 65.82%, #D2FFAF 88.95%);
+}
+
+.contact-social-item {
+    margin: 0 0 40px;
+    
+}
+
+.contact-social-link {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.contact-social-link > svg {
+    margin-right: 15px;
+}
+
+.contact-social-link:hover svg * {
+    fill: #8ABD63;
+}
+
+@media (max-width: 590px) {
+.contact-social {
+    max-width: unset;
+    width: 100%;
+    }
+}
+@media (max-width: 526px) {
+    .contact-social .act {
+        display: none;
+    }
+    .contact-social-item {
+        margin: 0 auto;  
+    }
+}

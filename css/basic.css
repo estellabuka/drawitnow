@@ -1,0 +1,177 @@
+html {
+  /*scroll-behavior: smooth;*/
+}
+/*TYPOGRAPGY*/
+
+/*Body-text*/
+
+body {
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #333D3F;
+}
+
+/*H2, H3 family*/
+.main-title, .secondary-title {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    color: #333D3F;
+    line-height: 120%;
+    text-transform: uppercase;
+  }
+  
+  /*H4, H5 Family*/
+  .branch-title, .text-caption  {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    color: #333D3F;
+    line-height: 140%;
+  }
+  
+  /*H2*/
+  .main-title {
+    font-size: 44px;
+    margin-bottom: 40px;
+  }
+  /*Subtitle*/
+  .subtitle {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    color: #333D3F;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  /*H3*/
+  .secondary-title {
+    font-size: 32px;
+  }
+  /*H4*/
+  .branch-title {
+    font-size: 24px;
+  }
+  /*H5, header-links and other*/
+  .text-caption {
+    font-size: 16px;
+  }
+  
+  /*Green Color*/
+  .green-font {
+    color: #8ABD63;
+  }
+
+  /*Caption*/
+
+  .description-text {
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #878787;
+  }
+  
+  /*Primary-button*/
+  .button {
+    position: relative;
+    padding: 17px 36px;
+    border-radius: 30px;
+    border: 0;
+    cursor: pointer;
+    font-family: 'Roboto Slab';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    color: #333D3F;
+  }
+  .prime-btn {
+    background: linear-gradient(95.6deg, #FFE7D9 12.37%, #FFEBB7 35.9%, #EDF493 65.82%, #D2FFAF 88.95%);
+  }
+  .second-btn {
+    background: #fff;
+    margin-left: 20px;
+  }
+  .file-btn {
+    margin: 0;
+    padding: 9px 18px;
+    pointer-events: none;
+  }
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: -3px;
+    z-index: -1;
+    border-radius: 30px; 
+    border: none;
+    background: linear-gradient(95.6deg, #FFE7D9 12.37%, #FFEBB7 35.9%, #EDF493 65.82%, #D2FFAF 88.95%) border-box;
+  }
+  .button:after {
+    content: ">";
+    margin-left: 5px;
+  }
+  .prime-btn:hover {
+    background: #fff;
+  } 
+  .second-btn:hover {
+    background: linear-gradient(95.6deg, #FFE7D9 12.37%, #FFEBB7 35.9%, #EDF493 65.82%, #D2FFAF 88.95%);
+  }
+  .attention {
+    position: fixed;
+    width: 100%;
+    background: #333D3F;
+    padding: 10px;
+    text-align: center;
+    z-index: 999;
+    left: 0;
+    bottom: 0;
+    white-space: nowrap;
+  }
+  .attention .subtitle {
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 0;
+    padding-left: 100%;
+    animation: scroll 20s infinite linear;
+  }
+  @keyframes scroll {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0)
+    }
+  }
+  /*Typography RESPONSIVE*/
+
+@media (max-width: 991px) {
+  .button {
+    margin: 10px;
+    }
+    .main-title {
+      margin-bottom: 20px;
+    }
+
+  }
+@media (max-width: 799px) {
+    .main-title {
+      font-size: 36px;
+    }
+    .secondary-title {
+      font-size: 28px;
+    }
+  }
+  @media (max-width: 526px) {
+    .button {
+        display: block;
+        width: 100%;
+        margin: 0 0 20px;
+    }
+} 

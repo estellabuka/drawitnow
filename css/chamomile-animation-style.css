@@ -1,0 +1,186 @@
+/*--- More about course' section ---*/
+
+.about-course-text {
+  padding: 0 657px 0 0;
+}
+
+.main-list-about {
+    margin: 30px 0 30px;
+  }
+  .dec {
+    padding-left: 30px;
+    margin: 15px 0;
+    position: relative;
+  }
+  .dec::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: linear-gradient(95.6deg, #FFE7D9 12.37%, #FFEBB7 35.9%, #EDF493 65.82%, #D2FFAF 88.95%);
+  }
+  .links-list {
+    margin: 0 0 40px;
+  }
+  .link-item {
+    font-weight: 700;
+    margin: 0 60px 0 0;
+  }
+  .link-item:hover {
+    color: #8ABD63;
+  }
+  .contact-about{ 
+    margin-bottom: 40px;
+    margin-right: 60px;
+  }
+  .contact-about, .team, .links-case-about a {
+    text-decoration: none;
+    color: #333D3F;
+    }
+  .team:hover, .contact-about:hover{
+    text-decoration: none;
+    color: #8ABD63;
+  }
+  .act {
+    display: flex;
+  }
+/*------Style of the animation------*/
+.chamomile-holder {
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+}
+.chamomile {
+  height: 653px;
+  width: 607px;
+  padding-top: 24px;
+  position: absolute;
+  right: 60px;
+    /*don't touch width*/
+  }
+  .imags-case {
+    display: block;
+    position: relative;
+    height: 616px;
+    width: 100%;
+    animation-name: rotation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes rotation {
+    0%{
+      transform: rotate(0deg);
+      transform-origin: center;
+    }
+    100%{
+      transform: rotate(360deg);
+      transform-origin: center;
+    }
+  }
+  .slide {
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    animation-name: rotation-back;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes rotation-back{
+    0%{
+      transform: rotate(0deg);
+      transform-origin: center;
+    }
+    50%{
+      transform: rotate(-180deg);
+      transform-origin: center;
+    }
+    100%{
+      transform: rotate(-360deg);
+      transform-origin: center;
+    }
+  }
+  .img-centr {
+    top: 50%;
+    left: 50%;
+    z-index: 99;
+    position: absolute;
+    margin: -120px -120px;
+    z-index: 99;
+  }
+  .img-right-up {
+    top: 100px;
+    right: 0;
+    z-index: 98;
+  
+  }
+  .img-right-down {
+    right: 0;
+    bottom: 100px;
+    z-index: 97;
+  }
+  .img-down {
+    bottom: 0px;
+    left: 184px;
+    z-index: 96;
+  }
+  .img-left-down {
+    bottom: 100px;
+    left: 0;
+    z-index: 93;
+  }
+  .img-left-up {
+    top: 100px;
+    left: 0;
+    z-index: 95;
+  }
+  .img-up {
+    top:0;
+    left: 184px;
+    z-index: 94;
+  }
+
+  @media only screen
+  and (max-width: 1199px) {
+    .about-course-text {
+      padding: 0 0 700px ;
+    }
+    .chamomile {
+      bottom: 0;
+      left: 50%;
+      margin: 0 0 0 -304px;
+      right: auto;
+    }
+    .imags-case,
+    .slide {
+      animation: none;
+    }
+  }
+  @media only screen
+  and (max-width: 991px) {
+    .act {
+      display: block;
+      max-width: 100%;
+    }
+    .link-item {
+      display: block;
+      margin: 0 0 20px;
+    }
+  }
+  @media only screen
+  and (max-width: 700px) {
+    .about-course-text {
+      padding: 0;
+    }
+    .chamomile {
+      display: none;
+    }
+  }
