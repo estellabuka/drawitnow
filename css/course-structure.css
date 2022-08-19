@@ -8,10 +8,7 @@
     border-radius: 60px;
 }
 .cards-top__title {
-    margin-top: 65px;
-    margin-bottom: 33px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 65px 60px 33px;
 }
 .cards-top__content {
     padding-left: 60px;
@@ -48,10 +45,7 @@
     
 }
 .card-bottom__title {
-    padding-top: 60px; 
-    padding-left: 60px;
-    padding-right: 60px;
-    margin-bottom: 33px; 
+    padding: 65px 60px 33px;
 }
 .card-bottom__content {
     padding: 0px 60px 64px;
@@ -72,10 +66,9 @@
     justify-content: center;
 }
 /******* RESPONSIVE ******/
-@media (max-width: 900px) {
+@media (max-width: 991px) {
     .cards-top__title {
-        margin: 0 0 10px 0;
-        padding: 30px 0 0 30px;
+        padding: 30px 30px 10px 30px;
     }
     .cards-top__content {
         padding: 0px 30px 40px 30px;
@@ -87,7 +80,6 @@
         padding: 0px 30px 30px 30px;
     }
     .card-bottom__title {
-        padding: 30px 0px 0 30px;
-        margin: 0 0 10px 0;
+        padding: 30px 30px 10px 30px;
     }
 }

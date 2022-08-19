@@ -9,14 +9,8 @@
     background: linear-gradient(95.6deg, #FFE7D9 12.37%, #FFEBB7 35.9%, #EDF493 65.82%, #D2FFAF 88.95%);
 }
 
-.contact-social {
-    max-width: calc( 100% / 2);
-    width: 100%;
-    padding-left: 50px;
-}
-
 .contact-social-item {
-    margin: 70px 0;
+    margin: 0 0 40px;
     
 }
 

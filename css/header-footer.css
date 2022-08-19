@@ -170,14 +170,14 @@
         position: absolute;
         z-index: 99;
         top: 33px;
-        left: 20px;
+        left: 40px;
     }
     .menu-btn{
         display: flex;
         align-items: center;
         position: absolute;
         top: 37px;
-        right:33px;
+        right:40px;
         width: 26px;
         height: 26px;
         cursor: pointer;
@@ -286,9 +286,12 @@
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 991px) {
     .header-wrapper .button {
         margin: 0 50px 0 0;
+    }
+    .footer {
+        margin-top: 80px;
     }
 }
 

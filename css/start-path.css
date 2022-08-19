@@ -3,27 +3,12 @@
     justify-content: space-between;
 }
 
-.path-main-text {
-    width: calc(100% / 2);
-
-}
-
-.path-text {
-    margin-top: 40px;
-}
-
 .path-text-item {
-    margin-top: 15px;
-
+    margin-bottom: 15px;
 }
 
 .path-text-item-bottom {
     margin: 30px 100px 40px 0;
     font-size: 14px;
     color: #878787;
-}
-@media (max-width: 900px) {
-    .path-main-text {
-        width: 100%;
-    }
 }

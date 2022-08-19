@@ -370,7 +370,7 @@
                 <div class="text-photo-box flex">
                     <div class="text-box">
                         <div class="subtitle">Хто я така?</div>
-                        <h2 class="main-title margin-bottom">Трохи про мене</h2>
+                        <h2 class="main-title">Трохи про мене</h2>
                         <div class="margin-bottom"><p>Я Саша Коваленко, практикуюча верстальниця та UX/UI дизайнерка аж з 2010 року. 
                                 Розпочинала свою кар'єру в IT з контент-менеджменту, самостійно вивчаючи HTML/CSS. Згодом мені пощастило потрапити до інтернатури в компанію. 
                                 Зараз я працюю в українській компанії Brightgrove на німецькому проекті і перебуваю в Німеччині.</p>
@@ -402,19 +402,19 @@
                 </div>
             </section>
             <!-- 'More about course' section -->
-            <section class="flex container" id="about-course">
+            <section class="flex container about-course" id="about-course">
                 <div class="about-course-text">
                     <div class="subtitle">Про що мій Авторський курс?</div>
-                    <h2 class="main-title margin-bottom">Детальніше</h2>
+                    <h2 class="main-title">Детальніше</h2>
                     <p>Курс про базові навички HTML/CSS верстання, мануальне тестування веб-сторінок та роботу з графічними редакторами. Курс допоможе остаточно вирішити в якому з напрямків рухатись далі, щоб працювати в IT</p>
                     <ul class="main-list-about">
                         <li class="dec">Макети організовані таким чином, що учень стикається зі всім, що може бути у верстанні сайтів</li>
                         <li class="dec">Курс розраховано на новачків та не потребує попередньої підготовки</li>
                         <li class="dec">Немає жорсткої прив'язки за часом проведення занять, можна рухатись у комфортному для себе темпі та вивчати матеріали у будь який час.</li>
                     </ul>
-                    <div class="links-case-about">
-                        <a href="#"><p class="contact-about">Підтримка 24/7</p></a>
-                        <a href="#"><p class="team text-caption">Про команду</p></a>
+                    <div class="links-list">
+                        <a href="#" class="link-item">Підтримка 24/7</a>
+                        <a href="#" class="link-item">Про команду</a>
                     </div>
                     <div class="act margin-bottom">
                         <button class="button prime-btn" data-modal="enroll" onClick="showModal(this)">Записатися зараз</button>
@@ -422,22 +422,24 @@
                     </div>
                 </div>
                 <!--Animation chamomile-->
-                <div class="chamomile">
-                    <div class="imags-case">
-                        <img class="slide img-centr" src="img/layout-scrnshot.png" alt="Слайд 1">
-                        <img class="slide img-right-up" src="img/layout-scrnshot-one.png" alt="Слайд 2">
-                        <img class="slide img-right-down" src="img/layout-scrnshot-two.png" alt="Слайд 3">
-                        <img class="slide img-down" src="img/layout-scrnshot-three.png" alt="Слайд 4">
-                        <img class="slide img-left-down" src="img/layout-scrnshot-four.png" alt="Слайд 5">
-                        <img class="slide img-left-up" src="img/layout-scrnshot-five.png" alt="Слайд 6">
-                        <img class="slide img-up" src="img/layout-scrnshot-ziro.png" alt="Слайд 7">
+                <div class="chamomile-holder">
+                    <div class="chamomile">
+                        <div class="imags-case">
+                            <img class="slide img-centr" src="img/layout-scrnshot.png" alt="Слайд 1">
+                            <img class="slide img-right-up" src="img/layout-scrnshot-one.png" alt="Слайд 2">
+                            <img class="slide img-right-down" src="img/layout-scrnshot-two.png" alt="Слайд 3">
+                            <img class="slide img-down" src="img/layout-scrnshot-three.png" alt="Слайд 4">
+                            <img class="slide img-left-down" src="img/layout-scrnshot-four.png" alt="Слайд 5">
+                            <img class="slide img-left-up" src="img/layout-scrnshot-five.png" alt="Слайд 6">
+                            <img class="slide img-up" src="img/layout-scrnshot-ziro.png" alt="Слайд 7">
+                        </div>
                     </div>
-                </div>
+                </div>    
             </section>
             <!-- 'Course structure' section -->
             <section class="structure-course container">
                 <p class="subtitle">проекти, які ми будемо кодити</p>
-                <h2 class="main-title margin-bottom">Структура курсу</h2>
+                <h2 class="main-title">Структура курсу</h2>
                 <div class="course-structure__cards flex">
                         <div class="cards-top__body">
                             <div class="cards-top__title">
@@ -509,7 +511,7 @@
             <!-- 'Tariffs' section -->
             <section class="tariffs container" id="tariffs">
                 <p class="subtitle">cкільки коштує?</p>
-                <h2 class="main-title margin-bottom">тарифи</h2>
+                <h2 class="main-title">тарифи</h2>
                 <div class="tariffs__card flex">
                     <!-- First card item -->
                     <div class="card-item">
@@ -647,12 +649,10 @@
                 <div class="path-main-text">
                     <p class="subtitle">Я дуже хочу допомогти кожному</p>
                     <h2 class="main-title">розпочати цей шлях</h2>
-                    <div class="path-text">
-                        <p class="path-text-item">Максимально відверто - це довгий шлях!</p>
-                        <p class="path-text-item">Будь ласка не чекайте, що через 2 місяці ви з легкістю отримаєте роботу з великою зарплатнею. Ніт! Конкуренція дуже серйозна, багато новачків готових працювати майже безкоштовно.</p>
-                        <p class="path-text-item">Але і роботи теж багато, купа інформації і можливостей для постійного навчання і найголовніше - безкрайній простір для розвитку і постійного професійного зростання. Тому будьте готові, що навчання яке ви розпочнете зараз, буде продовжуватися щодня, поки ви в IT</p>
-                        <p class="path-text-item-bottom">Звісно не зі мною ви на все життя 😆, а самостійно доведеться вчити щось нове щодня</p>
-                    </div>
+                    <p class="path-text-item">Максимально відверто - це довгий шлях!</p>
+                    <p class="path-text-item">Будь ласка не чекайте, що через 2 місяці ви з легкістю отримаєте роботу з великою зарплатнею. Ніт! Конкуренція дуже серйозна, багато новачків готових працювати майже безкоштовно.</p>
+                    <p class="path-text-item">Але і роботи теж багато, купа інформації і можливостей для постійного навчання і найголовніше - безкрайній простір для розвитку і постійного професійного зростання. Тому будьте готові, що навчання яке ви розпочнете зараз, буде продовжуватися щодня, поки ви в IT</p>
+                    <p class="path-text-item-bottom">Звісно не зі мною ви на все життя 😆, а самостійно доведеться вчити щось нове щодня</p>
                     <div class="path-buttons">
                         <button class="button prime-btn" data-modal="enroll" onClick="showModal(this)">Записатися зараз</button>
                         <button class="button second-btn" data-modal="payment" onClick="showModal(this)">Купити курс</button>
@@ -665,7 +665,7 @@
             <!-- Feedbacks section -->
             <section class="feedback container" id="feedbacks">
                 <p class="subtitle">Що учні пишуть після проходження курсу?</p>
-                <h2 class="main-title margin-bottom">Відгуки</h2>
+                <h2 class="main-title">Відгуки</h2>
                 <div class="gallery">
                     <div class="slider">
                         <div class="feedback__card">

@@ -1,14 +1,7 @@
 /*Тобі підійде...*/
   /*Резерв места под картинку*/
-  .qualities-image {
-    margin-right: 47px;
-  }
-  .qualities-text {
-    margin-left: 47px;
-    text-align: left;
-  }
   .qualities-list {
-    margin: 40px 0 0 30px;
+    margin: 0 0 0 30px;
   }
   .qualities-caption {
     margin-bottom: 6px;
@@ -16,7 +9,6 @@
   }
   .qualities-item {
     margin-bottom: 30px;
-    max-width: 500px;
   }
   .qualities-item strong {
     display: block;
@@ -31,4 +23,9 @@
     height: 20px;
     background: url(../img/bullet.svg);
     margin: 0 0 -20px -30px;
-  }  
+  } 
+  @media (max-width: 991px) {
+    .qualities-text {
+      margin-left: 0;
+    }
+  }

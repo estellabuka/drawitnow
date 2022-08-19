@@ -1,10 +1,9 @@
 /*--- More about course' section ---*/
+
 .about-course-text {
   padding: 0 657px 0 0;
 }
-.margin-bottom {
-  margin-bottom: 40px;
-}
+
 .main-list-about {
     margin: 30px 0 30px;
   }
@@ -25,8 +24,15 @@
     border-radius: 50%;
     background: linear-gradient(95.6deg, #FFE7D9 12.37%, #FFEBB7 35.9%, #EDF493 65.82%, #D2FFAF 88.95%);
   }
-  .links-case-about {
-    display: flex;
+  .links-list {
+    margin: 0 0 40px;
+  }
+  .link-item {
+    font-weight: 700;
+    margin: 0 60px 0 0;
+  }
+  .link-item:hover {
+    color: #8ABD63;
   }
   .contact-about{ 
     margin-bottom: 40px;
@@ -44,12 +50,19 @@
     display: flex;
   }
 /*------Style of the animation------*/
+.chamomile-holder {
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+}
 .chamomile {
   height: 653px;
   width: 607px;
   padding-top: 24px;
   position: absolute;
-  right: 0;
+  right: 60px;
     /*don't touch width*/
   }
   .imags-case {
@@ -136,7 +149,7 @@
   }
 
   @media only screen
-  and (max-width: 1100px) {
+  and (max-width: 1199px) {
     .about-course-text {
       padding: 0 0 700px ;
     }
@@ -152,13 +165,14 @@
     }
   }
   @media only screen
-  and (max-width: 900px) {
-    .margin-bottom {
-      margin-bottom: 20px;
-      }
+  and (max-width: 991px) {
     .act {
       display: block;
       max-width: 100%;
+    }
+    .link-item {
+      display: block;
+      margin: 0 0 20px;
     }
   }
   @media only screen
