@@ -13,10 +13,10 @@ $mail->IsHTML(true);
 //Автор та адресат
 $mail->setFrom('', 'Новий учень');
 $mail->addAddress('');
-$mail->Subjest = 'Привіт! На курс записався новий учень!';
+$mail->Subjest = 'Привіт! Курс купив новий учень!';
 
 //Mail body
-$body = '<h1>Новий учень записався на безкоштовний курс</h1>';
+$body = '<h1>Новий учень оплатив навчання на курсі</h1>';
 
 if(trim(!empty($_POST['name']))){
     $body.="<p><strong>Ім'я:</strong> ".$_POST['name']."</p>";

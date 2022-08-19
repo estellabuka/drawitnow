@@ -15,7 +15,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		if (error === 0) {
             const formBox = document.querySelector('#shortFormBox');
+            const activeModal = document.querySelector('.is-active');
+			const overlay = document.querySelector('.overlay');
             formBox.classList.add('_sending');
+			activeModal.classList.remove('is-active');
+			overlay.classList.remove('overlay');
             let response = await fetch('sendmail.php', {
                 method: 'POST',
                 body: formData
@@ -95,8 +99,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		if (error === 0) {
             const formBox = document.querySelector('#payFormBox');
+			const activeModal = document.querySelector('.is-active');
+			const overlay = document.querySelector('.overlay');
             formBox.classList.add('_sending');
-            let response = await fetch('sendmail.php', {
+			activeModal.classList.remove('is-active');
+			overlay.classList.remove('overlay');
+            let response = await fetch('sendmail_pay.php', {
                 method: 'POST',
                 body: formData
             });
