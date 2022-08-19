@@ -11,7 +11,7 @@ $mail->setLanguage('ru', 'phpmailer/language');
 $mail->IsHTML(true);
 
 //Автор та адресат
-$mail->setFrom('kovalenko.olexandra@gmail.co', 'Новий учень');
+$mail->setFrom('kovalenko.olexandra@gmail.com', 'Новий учень');
 $mail->addAddress('kovalenko.olexandra@gmail.com');
 $mail->Subjest = 'Привіт! На курс записався новий учень!';
 
@@ -21,11 +21,11 @@ $body = '<h1>Новий учень записався на безкоштовн�
 if(trim(!empty($_POST['name']))){
     $body.="<p><strong>Ім'я:</strong> ".$_POST['name']."</p>";
 }
-if(trim(!empty($_POST['email']))){
-    $body.="<p><strong>E-mail:</strong> ".$_POST['email']."</p>";
+if(trim(!empty($_POST['e-mail']))){
+    $body.="<p><strong>E-mail:</strong> ".$_POST['e-mail']."</p>";
 }
-if(trim(!empty($_POST['contact']))){
-    $body.="<p><strong>Контакт:</strong> ".$_POST['contact']."</p>";
+if(trim(!empty($_POST['telegram']))){
+    $body.="<p><strong>Контакт:</strong> ".$_POST['telegram']."</p>";
 }
 
 //File load
