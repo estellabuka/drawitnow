@@ -1,53 +1,71 @@
 <?php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+	use PHPMailer\PHPMailer\PHPMailer;
+	use PHPMailer\PHPMailer\Exception;
 
-require 'phpmailer/src/Exception.php';
-require 'phpmailer/src/PHPMailer.php';
+	require 'phpmailer/src/Exception.php';
+	require 'phpmailer/src/PHPMailer.php';
 
-$mail = new PHPMailer(true);
-$mail->CharSet = 'UTF-8';
-$mail->setLanguage('uk', 'phpmailer/language/');
-$mail->IsHTML(true);
+	$mail = new PHPMailer(true);
+	$mail->CharSet = 'UTF-8';
+	$mail->setLanguage('ru', 'phpmailer/language/');
+	$mail->IsHTML(true);
 
-//Автор та адресат
-$mail->setFrom('kovalenko.olexandra@gmail.com', 'Новий учень');
-$mail->addAddress('kovalenko.olexandra@gmail.com');
-$mail->Subjest = 'Привіт! На курс записався новий учень!';
+	//От кого письмо
+	$mail->setFrom('kovalenko.olexandra@gmail.com', 'FADU');
+	//Кому отправить
+	$mail->addAddress('kovalenko.olexandra@gmail.com');
+	//Тема письма
+	$mail->Subject = 'Привіт! Це FADU';
 
-//Mail body
-$body = '<h1>Новий учень записався на безкоштовний курс</h1>';
+	//Вибір
+	$choose = "Бажаю допомогти";
+	if($_POST['choose'] == "need"){
+		$choose = "Потребую допомоги";
+	}
 
-if(trim(!empty($_POST['name']))){
-    $body.="<p><strong>Ім'я:</strong> ".$_POST['name']."</p>";
-}
-if(trim(!empty($_POST['e-mail']))){
-    $body.="<p><strong>E-mail:</strong> ".$_POST['e-mail']."</p>";
-}
-if(trim(!empty($_POST['telegram']))){
-    $body.="<p><strong>Контакт:</strong> ".$_POST['telegram']."</p>";
-}
+	//Тело письма
+	$body = '<h1>На сайті FADU нова заявка</h1>';
+	
+	if(trim(!empty($_POST['name']))){
+		$body.='<p><strong>Ім&rsquo;я:</strong> '.$_POST['name'].'</p>';
+	}
+	if(trim(!empty($_POST['email']))){
+		$body.='<p><strong>E-mail:</strong> '.$_POST['email'].'</p>';
+	}
+	if(trim(!empty($_POST['choose']))){
+		$body.='<p><strong>Я:</strong> '.$choose.'</p>';
+	}
+	if(trim(!empty($_POST['tel']))){
+		$body.='<p><strong>Номер телефона:</strong> '.$_POST['tel'].'</p>';
+	}
+	
+	if(trim(!empty($_POST['message']))){
+		$body.='<p><strong>Сообщение:</strong> '.$_POST['message'].'</p>';
+	}
+	
+	//Прикрепить файл
+	if (!empty($_FILES['image']['tmp_name'])) {
+		//путь загрузки файла
+		$filePath = __DIR__ . "/files/" . $_FILES['image']['name']; 
+		//грузим файл
+		if (copy($_FILES['image']['tmp_name'], $filePath)){
+			$fileAttach = $filePath;
+			$body.='<p><strong>Фото в приложении</strong>';
+			$mail->addAttachment($fileAttach);
+		}
+	}
 
-//File load
-if (!empty($_FILES['image']['tmp_name'])) {
-    $filePath = __DIR__ . "/files" . $_FILES['image']['name'];
-    if (copy($_FILES['image']['tmp_name'], $filePath)){
-        $fileAttach = $filePath;
-        $body.='<p><strong>Фото у прикріпленні</strong></p>';
-        $mail->addAttachment($fileAttach);
-    }
-}
+	$mail->Body = $body;
 
-$mail->Body = $body;
+	//Отправляем
+	if (!$mail->send()) {
+		$message = 'Помилка';
+	} else {
+		$message = 'Данні відправлено!';
+	}
 
-if (!$mail->send()) {
-    $message = 'Помилка';
-} else {
-    $message = 'Дані відправлені!';
-}
+	$response = ['message' => $message];
 
-$response = ['message' => $message];
-
-header('Content-type: application/json');
-echo json_encode($response);
+	header('Content-type: application/json');
+	echo json_encode($response);
 ?>
