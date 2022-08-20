@@ -1800,9 +1800,7 @@ class PHPMailer
         if (isset($old_from)) {
             ini_set('sendmail_from', $old_from);
         }
-        if (!$result) {
-            throw new Exception($this->lang('instantiate'), self::STOP_CRITICAL);
-        }
+       
 
         return true;
     }
