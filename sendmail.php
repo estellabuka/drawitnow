@@ -7,13 +7,13 @@
 
 	$mail = new PHPMailer(true);
 	$mail->CharSet = 'UTF-8';
-	$mail->setLanguage('ru', 'phpmailer/language/');
+	$mail->setLanguage('uk', 'phpmailer/language/');
 	$mail->IsHTML(true);
 
 	//От кого письмо
-	$mail->setFrom('kovalenko.olexandra@gmail.com', 'FADU');
+	$mail->setFrom('infoa@drawitnow.online', 'drawitnow');
 	//Кому отправить
-	$mail->addAddress('kovalenko.olexandra@gmail.com');
+	$mail->addAddress('okovalenko@brightgrove.com');
 	//Тема письма
 	$mail->Subject = 'Привіт! Це FADU';
 
