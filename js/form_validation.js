@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const formBox = document.querySelector('#shortFormBox');
             const activeModal = document.querySelector('.is-active');
 			const overlay = document.querySelector('.overlay');
-            formBox.classList.add('_sending');
+            shortForm.classList.add('_sending');
 			activeModal.classList.remove('is-active');
 			overlay.classList.remove('overlay');
             let response = await fetch('sendmail.php', {
@@ -29,10 +29,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 alert(result.message);
                 formPreview.innerHTML = '';
                 shortForm.reset();
-                formBox.classList.remove('_sending');
+                shortForm.classList.remove('_sending');
             } else {
                 alert("Помилка! Не вдалося відправити форму");
-                formBox.classList.remove('_sending');
+                shortForm.classList.remove('_sending');
             }
 		} else {
 			alert("Будь ласка, перевірте коректність даних!");
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const formBox = document.querySelector('#payFormBox');
 			const activeModal = document.querySelector('.is-active');
 			const overlay = document.querySelector('.overlay');
-            formBox.classList.add('_sending');
+            payForm.classList.add('_sending');
 			activeModal.classList.remove('is-active');
 			overlay.classList.remove('overlay');
             let response = await fetch('sendmail_pay.php', {
@@ -113,10 +113,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 alert(result.message);
                 formPreview.innerHTML = '';
                 payForm.reset();
-                formBox.classList.remove('_sending');
+                payForm.classList.remove('_sending');
             } else {
                 alert("Помилка! Не вдалося відправити форму");
-                formBox.classList.remove('_sending');
+                payForm.classList.remove('_sending');
             }
 		} else {
 			alert("Будь ласка, перевірте коректність даних!");
