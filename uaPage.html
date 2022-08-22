@@ -331,29 +331,6 @@
                 </div>
                 <!--<img class="scroll_icon" src="./img/scroll-icon.svg" alt="scroll"/>-->
             </section>
-            <div class="form">
-                <form action="#" id="form" class="form__body">
-                    <div class="choose">
-                        <div class="choose-holder">
-                            <input id="choose-can" type="radio" name="choose" class="choose-radio" checked="checked"
-                                value="can">
-                            <label for="choose-can" class="btn__choose">Бажаєте допомогти</label>
-                        </div>
-                        <div class="choose-holder">
-                            <input id="choose-need" type="radio" name="choose" class="choose-radio" value="need">
-                            <label for="choose-need" class="btn__choose">Потребуєте допомоги</label>
-                        </div>
-                    </div>
-                    <div class="input__data">
-                        <input type="text" class="data__item _req" placeholder="Імʼя/ Назва організації" value=""
-                            name="name">
-                        <input type="email" name="email" class="data__item _req _email" placeholder="Емейл"
-                            value="">
-                        <input type="tel" class="data__item _req" name="tel" placeholder="Номер телефону" value="">
-                    </div>
-                    <input type="submit" class="btn" value="Надіслати">
-                </form>
-            </div>
             <!-- 'It's for you if' section -->
             <section class="flex container">
                 <div class="img-holder img-center">
@@ -871,7 +848,7 @@
                         </button>
                     </div>
                 </div>
-                <form action="" class="modal_form" id="payForm">
+                <form action="" class="modal_form" id="payForm" method="post">
                     <div class="modal_inputWrapper">
                         <input type="text" name="name" class="modal_input _reqPay" placeholder="Ім’я"/>
                         <span class="modal_inputLabel">Ім’я</span>
@@ -904,7 +881,7 @@
                 <button type="button" class="modal_closeBtn" onClick="closeModal(this)"><img src="img/close_icon.svg" alt="x"></button>
                 <p class="subtitle modal_subTitle">Авторський курс</p>
                 <h2 class="main-title modal_title">Запис на курс</h2>
-                <form action="" class="modal_form" id="shortForm">
+                <form action="" class="modal_form" id="shortForm" method="post">
                     <div class="modal_inputWrapper">
                         <input type="text" name="name" class="modal_input _req" placeholder="Ім’я"/>
                         <span class="modal_inputLabel">Ім’я</span>
@@ -929,7 +906,7 @@
         <script type="text/javascript" src="slick/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="slick/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript" src="slick/slick.min.js"></script>
-        <script type="text/javascript" src="js/form.js"></script>
+        <script type="text/javascript" src="js/form_validation.js"></script>
         <script type="text/javascript">
             $('.gallery').slick({
               dots: true,
