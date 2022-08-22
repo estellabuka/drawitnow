@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 let result = await response.json();
                 alert(result.message);
                 formPreview.innerHTML = '';
-                form.reset();
+                shortForm.reset();
                 formBox.classList.remove('_sending');
             } else {
                 alert("Помилка! Не вдалося відправити форму");
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 let result = await response.json();
                 alert(result.message);
                 formPreview.innerHTML = '';
-                form.reset();
+                payForm.reset();
                 formBox.classList.remove('_sending');
             } else {
                 alert("Помилка! Не вдалося відправити форму");
