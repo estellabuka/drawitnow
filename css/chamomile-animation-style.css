@@ -54,6 +54,7 @@
   width: 100%;
   height: 800px;
   position: absolute;
+  top: 0;
   right: 0;
   overflow: hidden;
 }
@@ -147,17 +148,21 @@
     left: 184px;
     z-index: 94;
   }
-
   @media only screen
   and (max-width: 1199px) {
     .about-course-text {
       padding: 0 0 700px ;
+    }
+    .chamomile-holder {
+      top: unset;
+      bottom: 0;
     }
     .chamomile {
       bottom: 0;
       left: 50%;
       margin: 0 0 0 -304px;
       right: auto;
+      bottom: 0;
     }
     .imags-case,
     .slide {
