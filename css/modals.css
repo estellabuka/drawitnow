@@ -38,7 +38,10 @@
 .modal_title {
     margin-bottom: 60px;
 }
-
+.form-holder {
+    flex: 0 0 50%;
+    padding: 60px 0 60px 60px;
+}
 .modal_form {
     display: flex;
     flex-direction: column;
@@ -49,7 +52,7 @@
     background: linear-gradient(95.6deg, #FFE7D9 12.37%, #FFEBB7 35.9%, #EDF493 65.82%, #D2FFAF 88.95%);
     border-radius: 30px;
     display: inline-block;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     padding: 2px;
     position: relative;
 }
@@ -66,6 +69,9 @@
     border: none;
     width: 100%;
     caret-color: #8ABD63;
+}
+::placeholder {
+    font-family: 'Roboto Slab', serif;
 }
 .modal_input.file-input {
     position: relative;
@@ -136,11 +142,18 @@
 .modal_button {
     align-self: end;
 }
-
+.payment_area {
+    background: linear-gradient(95.6deg, #FFE7D9 12.37%, #FFEBB7 35.9%, #EDF493 65.82%, #D2FFAF 88.95%);
+    margin: 0 0 40px;
+    border-radius: 60px;
+    padding: 60px;
+}
 .payment_block {
     margin-bottom: 60px;
 }
-
+.payment_block:last-of-type {
+    margin-bottom: 0;
+}
 .copy_icon {
     background: none;
     border: none;
@@ -149,21 +162,11 @@
     cursor: pointer;
 }
 .copy_icon:hover path {
-    stroke: #feecb6;
+    stroke: #333D3F;
 }
 .payment_title {
     margin-bottom: 18px;
     position: relative;
-}
-.payment_title::before{
-    content: "";
-    display: block;
-    width: 20px;
-    height: 20px;
-    background: url(../img/bullet.svg);
-    position: absolute;
-    top: 7px;
-    left:-30px;
 }
 
 .payment_items {
@@ -174,6 +177,8 @@
 .payment_item {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 0 0 20px;
 }
 
 .payment_items .payment_item {
@@ -191,10 +196,6 @@
 .payment_items .payment_details p:last-child {
     color: #878787;
     font-size: 14px;
-}
-
-.payment_block:last-of-type .payment_item {
-    align-items: center;
 }
 
 .modal_closeBtn {
@@ -244,6 +245,14 @@
     opacity: 1;
     visibility: visible;
 }
+@media (max-width: 991px) {
+    .form-holder {
+        padding: 40px 0;
+    }
+    .payment_area {
+        padding: 30px;
+    }
+}
 @media (max-width: 700px) {
 
     .modal {
@@ -257,6 +266,12 @@
     }
     .modal_closeBtn {
         right: 20px;
+    }
+    .payment_block {
+        margin-bottom: 20px;
+    }
+    .payment_details {
+        font-size: 12px;
     }
     
 }
