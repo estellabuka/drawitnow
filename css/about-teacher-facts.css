@@ -38,4 +38,42 @@
     margin: 0 auto;
   }
 }
-  
+@media (max-width: 1270px) {
+  .icon-about {
+    right: 0px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .icon-about {
+    right: 0px;
+    bottom: 60px;
+  }
+}
+@media (max-width: 991px) {
+  .icon-about {
+  right: 154px;
+  }
+}
+@media (max-width: 940px) {
+  .icon-about {
+    right: 154px;
+    bottom: 75%;
+  }
+}
+@media (max-width: 760px) {
+  .icon-about {
+    right: 10%;
+  }
+}
+@media (max-width: 425px) {
+  .icon-about {
+    right: 0;
+    bottom: 70%;
+  }
+}
+@media (max-width: 375px) {
+  .icon-about {
+    right: -50px;
+  }
+}
