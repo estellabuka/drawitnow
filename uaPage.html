@@ -57,14 +57,14 @@
                                 </svg>
                             </a>
                         </div>
-                        <button class="button prime-btn" data-modal="enroll" onClick="showModal(this)">Записатися зараз</button>
+                        <a class="button prime-btn" href="#pay" onclick = "closeHamburger()">Записатися зараз</a>
                     </nav>
                     <!-- <div class="language">
                         <a href="#" class="language-item">UA</a>
                         <div></div>
                         <a href="#" class="language-item">EN</a>
                     </div> -->
-                    <button class="button prime-btn" data-modal="enroll" onClick="showModal(this)">Записатися зараз</button>
+                    <a class="button prime-btn" href="#pay">Записатися зараз</a>
                 </div>
             </div>
         </header>
@@ -375,8 +375,8 @@
                                 Зараз я працюю в українській компанії Brightgrove на довготривалому e-commerce проекті і перебуваю в Німеччині.</p>
                         </div>
                         <div class="act">
-                            <button class="button prime-btn" data-modal="enroll" onClick="showModal(this)">Записатися зараз</button>
-                            <button class="button second-btn" data-modal="payment" onClick="showModal(this)">Купити курс</button>
+                            <a class="button prime-btn" href="#pay">Записатися зараз</a>
+                            <a class="button second-btn" href="#pay">Купити курс</a>
                         </div>
                     </div>
                     <div class="img-holder">
@@ -416,8 +416,8 @@
                         <a href="#" class="link-item">Про команду</a>
                     </div> -->
                     <div class="act margin-bottom">
-                        <button class="button prime-btn" data-modal="enroll" onClick="showModal(this)">Записатися зараз</button>
-                        <button class="button second-btn" data-modal="payment" onClick="showModal(this)">Купити курс</button>
+                        <a class="button prime-btn" href="#pay">Записатися зараз</a>
+                        <a class="button second-btn" href="#pay">Купити курс</a>
                     </div>
                 </div>
                 <!--Animation chamomile-->
@@ -499,12 +499,8 @@
                         </div>
                 </div>
                 <div class="course-structure__buttons act">
-                    <button class="button prime-btn" data-modal="enroll" onClick="showModal(this)">
-                        Записатися зараз
-                    </button>
-                    <button class="button second-btn" data-modal="payment" onClick="showModal(this)">
-                        Купити курс
-                    </button>
+                    <a class="button prime-btn" href="#pay">Записатися зараз</a>
+                    <a class="button second-btn" href="#pay">Купити курс</a>
                 </div>
             </section>
             <!-- 'Tariffs' section -->
@@ -522,6 +518,7 @@
                                 <span class="price-main">free</span>
                             </p>
                           </div>
+                          <p class="sub-price">але донат краще 💛💙</p>
                         </div>
                       </div>
                       <div class="card-main">
@@ -543,7 +540,8 @@
                           </div>
                         </ul>
                         <div class="btn-absolute">
-                            <button class="button prime-btn btn-tariff" data-modal="enroll" onClick="showModal(this)">Записатися зараз</button>
+                            <p class="card-daystart">Заповни форму та отримай доступ</p>
+                            <a class="button prime-btn btn-tariff" href="#pay">Записатися</a>
                         </div>
                       </div>
                     </div>
@@ -588,7 +586,7 @@
                         <div class="btn-absolute">
                             <div class="card-bottom">
                                 <p class="card-daystart">Cтарт<span>5.09.2022</span></p>
-                                <button class="button prime-btn btn-tariff" data-modal="enroll" onClick="showModal(this)">Записатися зараз</button>
+                                <a class="button prime-btn btn-tariff" href="#pay">Купити курс</a>
                             </div>
                         </div>
                         </div>
@@ -636,7 +634,7 @@
                         <div class="btn-absolute">
                             <div class="card-bottom">
                                 <p class="card-daystart">Cтарт<span>3.10.2022</span></p>
-                                <button class="button prime-btn btn-tariff" data-modal="enroll" onClick="showModal(this)">Записатися зараз</button>
+                                <a class="button prime-btn btn-tariff" href="#pay">Купити курс</a>
                             </div>
                         </div>
                       </div>
@@ -653,13 +651,121 @@
                     <p class="path-text-item">Але і роботи теж багато, купа інформації і можливостей для постійного навчання і найголовніше - безкрайній простір для розвитку і постійного професійного зростання. Тому готуйся, що навчання яке розпочнется зараз, буде продовжуватися щодня, поки ти в IT</p>
                     <p class="path-text-item-bottom">Звісно не зі мною на все життя 😆, а самостійно доведеться вчити щось нове щодня</p>
                     <div class="path-buttons">
-                        <button class="button prime-btn" data-modal="enroll" onClick="showModal(this)">Записатися зараз</button>
-                        <button class="button second-btn" data-modal="payment" onClick="showModal(this)">Купити курс</button>
+                        <a class="button prime-btn" href="#pay">Купити курс</a>
                     </div>
                 </div>
                 <div class="img-holder img-center">
                     <img class="img-resp" src="img/pic3.png" alt="cofe 8*">
                 </div>
+            </section>
+            <section class="container" id="pay">
+                <p class="subtitle">Записатися на курс</p>
+                <h2 class="main-title">Реквізити для оплати</h2>
+                <div class="flex">
+                    <div class="payment_area">
+                        <div class="payment_block">
+                            <h4 class="payment_title branch-title">Банківська картка</h4>
+                            <div class="payment_item">
+                                <div class="payment_details">
+                                    <p>5375 4141 0718 8459</p>
+                                    <input type='text' class="visually-hidden" value="5375414107188459"/>
+                                    <p>Монобанк</p>
+                                </div>
+                                <button type="button" class="copy_icon" onClick='copyPaymentDetails(this)'>
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18 12V30C18 30.7956 18.3161 31.5587 18.8787 32.1213C19.4413 32.6839 20.2044 33 21 33H33C33.7956 33 34.5587 32.6839 35.1213 32.1213C35.6839 31.5587 36 30.7956 36 30V16.863C36 16.4633 35.92 16.0677 35.765 15.6994C35.6099 15.331 35.3828 14.9974 35.097 14.718L30.1245 9.855C29.564 9.30699 28.8114 9.0001 28.0275 9H21C20.2044 9 19.4413 9.31607 18.8787 9.87868C18.3161 10.4413 18 11.2044 18 12V12Z" stroke="#8ABD63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M30 32.8667V35.9333C30 36.7467 29.6839 37.5267 29.1213 38.1018C28.5587 38.6769 27.7956 39 27 39H15C14.2044 39 13.4413 38.6769 12.8787 38.1018C12.3161 37.5267 12 36.7467 12 35.9333V19.0667C12 18.2533 12.3161 17.4733 12.8787 16.8982C13.4413 16.3231 14.2044 16 15 16H18" stroke="#8ABD63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="payment_item">
+                                <div class="payment_details">
+                                    <p>5457 0822 7365 9925</p>
+                                    <input type='text' class="visually-hidden" value="5457082273659925"/>
+                                    <p>Приватбанк</p>
+                                </div>
+                                <button type="button" class="copy_icon" onClick='copyPaymentDetails(this)'>
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18 12V30C18 30.7956 18.3161 31.5587 18.8787 32.1213C19.4413 32.6839 20.2044 33 21 33H33C33.7956 33 34.5587 32.6839 35.1213 32.1213C35.6839 31.5587 36 30.7956 36 30V16.863C36 16.4633 35.92 16.0677 35.765 15.6994C35.6099 15.331 35.3828 14.9974 35.097 14.718L30.1245 9.855C29.564 9.30699 28.8114 9.0001 28.0275 9H21C20.2044 9 19.4413 9.31607 18.8787 9.87868C18.3161 10.4413 18 11.2044 18 12V12Z" stroke="#8ABD63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M30 32.8667V35.9333C30 36.7467 29.6839 37.5267 29.1213 38.1018C28.5587 38.6769 27.7956 39 27 39H15C14.2044 39 13.4413 38.6769 12.8787 38.1018C12.3161 37.5267 12 36.7467 12 35.9333V19.0667C12 18.2533 12.3161 17.4733 12.8787 16.8982C13.4413 16.3231 14.2044 16 15 16H18" stroke="#8ABD63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="payment_item">
+                                <div class="payment_details">
+                                    <p>5351 2901 2530 4726</p>
+                                    <input type='text' class="visually-hidden" value="5351290125304726"/>
+                                    <p>Укрсиббанк</p>
+                                </div>
+                                <button type="button" class="copy_icon" onClick='copyPaymentDetails(this)'>
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18 12V30C18 30.7956 18.3161 31.5587 18.8787 32.1213C19.4413 32.6839 20.2044 33 21 33H33C33.7956 33 34.5587 32.6839 35.1213 32.1213C35.6839 31.5587 36 30.7956 36 30V16.863C36 16.4633 35.92 16.0677 35.765 15.6994C35.6099 15.331 35.3828 14.9974 35.097 14.718L30.1245 9.855C29.564 9.30699 28.8114 9.0001 28.0275 9H21C20.2044 9 19.4413 9.31607 18.8787 9.87868C18.3161 10.4413 18 11.2044 18 12V12Z" stroke="#8ABD63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M30 32.8667V35.9333C30 36.7467 29.6839 37.5267 29.1213 38.1018C28.5587 38.6769 27.7956 39 27 39H15C14.2044 39 13.4413 38.6769 12.8787 38.1018C12.3161 37.5267 12 36.7467 12 35.9333V19.0667C12 18.2533 12.3161 17.4733 12.8787 16.8982C13.4413 16.3231 14.2044 16 15 16H18" stroke="#8ABD63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="payment_block">
+                            <h4 class="payment_title branch-title">IBAN</h4>
+                            <div class="payment_item">
+                                <div class="payment_details">
+                                    <p>UA603510050000026000878824718</p>
+                                    <input type='text' class="visually-hidden" value="UA603510050000026000878824718"/>
+                                </div>
+                                <button type="button" class="copy_icon" onClick='copyPaymentDetails(this)'>
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 12V30C18 30.7956 18.3161 31.5587 18.8787 32.1213C19.4413 32.6839 20.2044 33 21 33H33C33.7956 33 34.5587 32.6839 35.1213 32.1213C35.6839 31.5587 36 30.7956 36 30V16.863C36 16.4633 35.92 16.0677 35.765 15.6994C35.6099 15.331 35.3828 14.9974 35.097 14.718L30.1245 9.855C29.564 9.30699 28.8114 9.0001 28.0275 9H21C20.2044 9 19.4413 9.31607 18.8787 9.87868C18.3161 10.4413 18 11.2044 18 12V12Z" stroke="#8ABD63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M30 32.8667V35.9333C30 36.7467 29.6839 37.5267 29.1213 38.1018C28.5587 38.6769 27.7956 39 27 39H15C14.2044 39 13.4413 38.6769 12.8787 38.1018C12.3161 37.5267 12 36.7467 12 35.9333V19.0667C12 18.2533 12.3161 17.4733 12.8787 16.8982C13.4413 16.3231 14.2044 16 15 16H18" stroke="#8ABD63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="payment_block">
+                            <h4 class="payment_title branch-title">Банка для донатів 💛💙</h4>
+                            <div class="payment_item">
+                                <div class="payment_details">
+                                    <a href="https://send.monobank.ua/jar/qbZdyxY7a">https://send.monobank.ua/jar/qbZdyxY7a</a>
+                                    <input type='text' class="visually-hidden" value="https://send.monobank.ua/jar/qbZdyxY7a"/>
+                                </div>
+                                <button type="button" class="copy_icon" onClick='copyPaymentDetails(this)'>
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 12V30C18 30.7956 18.3161 31.5587 18.8787 32.1213C19.4413 32.6839 20.2044 33 21 33H33C33.7956 33 34.5587 32.6839 35.1213 32.1213C35.6839 31.5587 36 30.7956 36 30V16.863C36 16.4633 35.92 16.0677 35.765 15.6994C35.6099 15.331 35.3828 14.9974 35.097 14.718L30.1245 9.855C29.564 9.30699 28.8114 9.0001 28.0275 9H21C20.2044 9 19.4413 9.31607 18.8787 9.87868C18.3161 10.4413 18 11.2044 18 12V12Z" stroke="#8ABD63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M30 32.8667V35.9333C30 36.7467 29.6839 37.5267 29.1213 38.1018C28.5587 38.6769 27.7956 39 27 39H15C14.2044 39 13.4413 38.6769 12.8787 38.1018C12.3161 37.5267 12 36.7467 12 35.9333V19.0667C12 18.2533 12.3161 17.4733 12.8787 16.8982C13.4413 16.3231 14.2044 16 15 16H18" stroke="#8ABD63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="payFormBox" class="form-holder">
+                        <form action="" class="modal_form" id="payForm" method="post">
+                        <div class="modal_inputWrapper">
+                            <input type="text" name="name" class="modal_input _reqPay" placeholder="Ім’я"/>
+                            <span class="modal_inputLabel">Ім’я</span>
+                            <!--<span class="modal_inputDescription">Подсказка</span>-->
+                        </div>
+                        <div class="modal_inputWrapper">
+                            <input type="text" class="modal_input _reqPay _emailPay" name="e-mail" placeholder="e-mail"/>
+                            <span class="modal_inputLabel">E-mail</span>
+                            <!--<span class="modal_inputDescription">Подсказка</span>-->
+                        </div>
+
+                        <div class="modal_inputWrapper">
+                            <input type="text" class="modal_input _reqPay _tgPay" name="telegram" placeholder="@telegram"/>
+                            <span class="modal_inputLabel">Контакт</span>
+                            <!-- <span class="modal_inputDescription">Наприклад, @estellabuka</span> -->
+                        </div>
+                        <div class="modal_inputWrapper file_inputWrapper">
+                            <span class="modal_inputLabel file-label">Прикріпити скріншот оплати</span>
+                            <div class="modal_input file-input">
+                                <input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file-check">
+                                <span class="button second-btn file-btn">Обрати</span>
+                            </div>
+                            <div class="file_preview" id="formPreview"></div>
+                        </div>
+                        <button type="submit" class="button prime-btn modal_button">Записатися на курс</button>
+                    </form>
+                    </div>
+                </div>    
             </section>
             <!-- Feedbacks section -->
             <!--<section class="feedback container" id="feedbacks">
@@ -788,121 +894,13 @@
                             <!-- <span>Privacy Policy</span> -->
                         </div>
                         <div class="footer-buttons">
-                            <button class="button second-btn" data-modal="payment" onClick="showModal(this)">Купити курс</button>
-                            <button class="button prime-btn" data-modal="enroll" onClick="showModal(this)">Записатися зараз</button>
+                            <a class="button second-btn" href="#pay">Купити курс</a>
+                            <a class="button prime-btn" href="#pay">Записатися зараз</a>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
-
-        <!-- Modals start here -->
-        <div class="modals">
-            <div class="modal modal_payment" id="payFormBox">
-                <button type="button" class="modal_closeBtn" onClick="closeModal(this)"><img src="img/close_icon.svg" alt="x"></button>
-                <p class="subtitle modal_subTitle">Авторський курс</p>
-                <h2 class="main-title modal_title">Реквізити для оплати</h2>
-                <div class="payment_block">
-                    <h4 class="payment_title branch-title">Банківська картка</h4>
-                    <div class="payment_items">
-                        <div class="payment_item">
-                            <div class="payment_details">
-                                <p>0000 0000 0000 0000</p>
-                                <input type='text' class="visually-hidden" value="0000 0000 0000 0000"/>
-                                <p>Монобанк</p>
-                            </div>
-                            <button type="button" class="copy_icon" onClick='copyPaymentDetails(this)'>
-                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18 12V30C18 30.7956 18.3161 31.5587 18.8787 32.1213C19.4413 32.6839 20.2044 33 21 33H33C33.7956 33 34.5587 32.6839 35.1213 32.1213C35.6839 31.5587 36 30.7956 36 30V16.863C36 16.4633 35.92 16.0677 35.765 15.6994C35.6099 15.331 35.3828 14.9974 35.097 14.718L30.1245 9.855C29.564 9.30699 28.8114 9.0001 28.0275 9H21C20.2044 9 19.4413 9.31607 18.8787 9.87868C18.3161 10.4413 18 11.2044 18 12V12Z" stroke="#8ABD63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M30 32.8667V35.9333C30 36.7467 29.6839 37.5267 29.1213 38.1018C28.5587 38.6769 27.7956 39 27 39H15C14.2044 39 13.4413 38.6769 12.8787 38.1018C12.3161 37.5267 12 36.7467 12 35.9333V19.0667C12 18.2533 12.3161 17.4733 12.8787 16.8982C13.4413 16.3231 14.2044 16 15 16H18" stroke="#8ABD63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="payment_item">
-                            <div class="payment_details">
-                                <p>0000 0000 0000 0000</p>
-                                <input type='text' class="visually-hidden" value="0000 0000 0000 0000"/>
-                                <p>Приватбанк</p>
-                            </div>
-                            <button type="button" class="copy_icon" onClick='copyPaymentDetails(this)'>
-                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18 12V30C18 30.7956 18.3161 31.5587 18.8787 32.1213C19.4413 32.6839 20.2044 33 21 33H33C33.7956 33 34.5587 32.6839 35.1213 32.1213C35.6839 31.5587 36 30.7956 36 30V16.863C36 16.4633 35.92 16.0677 35.765 15.6994C35.6099 15.331 35.3828 14.9974 35.097 14.718L30.1245 9.855C29.564 9.30699 28.8114 9.0001 28.0275 9H21C20.2044 9 19.4413 9.31607 18.8787 9.87868C18.3161 10.4413 18 11.2044 18 12V12Z" stroke="#8ABD63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M30 32.8667V35.9333C30 36.7467 29.6839 37.5267 29.1213 38.1018C28.5587 38.6769 27.7956 39 27 39H15C14.2044 39 13.4413 38.6769 12.8787 38.1018C12.3161 37.5267 12 36.7467 12 35.9333V19.0667C12 18.2533 12.3161 17.4733 12.8787 16.8982C13.4413 16.3231 14.2044 16 15 16H18" stroke="#8ABD63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="payment_block">
-                    <h4 class="payment_title branch-title">IBAN</h4>
-                    <div class="payment_item">
-                        <div class="payment_details">
-                            <p>UA XX XXXXXX XXXXXXXXXXXXXXXXXXX</p>
-                            <input type='text' class="visually-hidden" value="XX XXXXXX XXXXXXXXXXXXXXXXXXX"/>
-                        </div>
-                        <button type="button" class="copy_icon" onClick='copyPaymentDetails(this)'>
-                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18 12V30C18 30.7956 18.3161 31.5587 18.8787 32.1213C19.4413 32.6839 20.2044 33 21 33H33C33.7956 33 34.5587 32.6839 35.1213 32.1213C35.6839 31.5587 36 30.7956 36 30V16.863C36 16.4633 35.92 16.0677 35.765 15.6994C35.6099 15.331 35.3828 14.9974 35.097 14.718L30.1245 9.855C29.564 9.30699 28.8114 9.0001 28.0275 9H21C20.2044 9 19.4413 9.31607 18.8787 9.87868C18.3161 10.4413 18 11.2044 18 12V12Z" stroke="#8ABD63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M30 32.8667V35.9333C30 36.7467 29.6839 37.5267 29.1213 38.1018C28.5587 38.6769 27.7956 39 27 39H15C14.2044 39 13.4413 38.6769 12.8787 38.1018C12.3161 37.5267 12 36.7467 12 35.9333V19.0667C12 18.2533 12.3161 17.4733 12.8787 16.8982C13.4413 16.3231 14.2044 16 15 16H18" stroke="#8ABD63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        </button>
-                    </div>
-                </div>
-                <form action="" class="modal_form" id="payForm" method="post">
-                    <div class="modal_inputWrapper">
-                        <input type="text" name="name" class="modal_input _reqPay" placeholder="Ім’я"/>
-                        <span class="modal_inputLabel">Ім’я</span>
-                        <!--<span class="modal_inputDescription">Подсказка</span>-->
-                    </div>
-                    <div class="modal_inputWrapper">
-                        <input type="text" class="modal_input _reqPay _emailPay" name="e-mail" placeholder="e-mail"/>
-                        <span class="modal_inputLabel">E-mail</span>
-                        <!--<span class="modal_inputDescription">Подсказка</span>-->
-                    </div>
-
-                    <div class="modal_inputWrapper">
-                        <input type="text" class="modal_input _reqPay _tgPay" name="telegram" placeholder="@telegram"/>
-                        <span class="modal_inputLabel">Контакт</span>
-                        <span class="modal_inputDescription">Наприклад, @estellabuka</span>
-                    </div>
-                    <div class="modal_inputWrapper file_inputWrapper">
-                        <span class="modal_inputLabel file-label">Прикріпити скріншот</span>
-                        <div class="modal_input file-input">
-                            <input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file-check">
-                            <span class="button second-btn file-btn">Обрати</span>
-                        </div>
-                        <div class="file_preview" id="formPreview"></div>
-                    </div>
-                    <button type="submit" class="button prime-btn modal_button">Записатися на курс</button>
-                </form>
-            </div>
-
-            <div class="modal modal_enroll" id="shortFormBox">
-                <button type="button" class="modal_closeBtn" onClick="closeModal(this)"><img src="img/close_icon.svg" alt="x"></button>
-                <p class="subtitle modal_subTitle">Авторський курс</p>
-                <h2 class="main-title modal_title">Запис на курс</h2>
-                <form action="" class="modal_form" id="shortForm" method="post">
-                    <div class="modal_inputWrapper">
-                        <input type="text" name="name" class="modal_input _req" placeholder="Ім’я"/>
-                        <span class="modal_inputLabel">Ім’я</span>
-                        <!--<span class="modal_inputDescription">Подсказка</span>-->
-                    </div>
-                    <div class="modal_inputWrapper">
-                        <input type="text" class="modal_input _req _email" name="e-mail" placeholder="e-mail"/>
-                        <span class="modal_inputLabel">E-mail</span>
-                        <!--<span class="modal_inputDescription">Подсказка</span>-->
-                    </div>
-
-                    <div class="modal_inputWrapper">
-                        <input type="text" class="modal_input _req _tg" name="telegram" placeholder="@telegram"/>
-                        <span class="modal_inputLabel">Контакт</span>
-                        <span class="modal_inputDescription">Наприклад, @estellabuka</span>
-                    </div>
-                    <button type="submit" class="button prime-btn modal_button">Записатися на курс</button>
-                </form>
-            </div>
-        </div>
-
         <script type="text/javascript" src="slick/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="slick/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript" src="slick/slick.min.js"></script>
