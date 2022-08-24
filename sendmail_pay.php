@@ -16,7 +16,7 @@ $mail->addAddress('kovalenko.olexandra@gmail.com');
 $mail->Subjest = 'Привіт! Курс купив новий учень!';
 
 //Mail body
-$body = '<h1>Новий учень оплатив навчання на курсі</h1>';
+$body = '<h1>Новий учень хоче на курс</h1>';
 
 if(trim(!empty($_POST['name']))){
     $body.="<p><strong>Ім'я:</strong> ".$_POST['name']."</p>";
