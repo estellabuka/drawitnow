@@ -1,9 +1,9 @@
 .promo{
-    min-height: 100vh;
     position: relative;
     background: url("../img/promo_bg.png") no-repeat bottom;
     background-size: 100% auto;
     padding: 100px 0 0;
+    margin: 0 0 120px;
 }
 .promo_text{
     text-align: left;
@@ -39,16 +39,16 @@
     background: linear-gradient(180deg, #FFFFFF 16.07%, rgba(255, 255, 255, 0) 100%);
 
 }
-/*animation_wrapper:after {
+.animation_wrapper:after {
     content:"";
     width: 1100px;
-    height: 420px;
+    height: 564px;
     margin: 0 auto;
     position: absolute;
     top: 0;
-    background-image: url("https://i.ibb.co/kBK5Yw6/img-noise-361x370-2.png");
-    z-index: 99999;
-}*/
+    background-image: url("../img/img-noise-361x370-2.png");
+    z-index: 99;
+}
 .box{
     box-sizing: border-box;
     width: 385px;
