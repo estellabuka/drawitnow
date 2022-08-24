@@ -34,8 +34,9 @@
   .text-photo-box {
     margin-bottom: 40px;
   }
-  .text-box {
-    margin: 0 auto;
+  .text-box,
+  .path-main-text {
+    margin: 0 auto 40px;
   }
 }
 @media (max-width: 1270px) {
