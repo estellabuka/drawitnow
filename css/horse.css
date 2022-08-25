@@ -334,6 +334,7 @@
     }
     .promo {
         min-height: unset;
+        margin: 0;
     }
     .promo_text {
         top: 0;
