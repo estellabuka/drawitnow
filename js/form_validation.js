@@ -1,5 +1,22 @@
 "use strict"
 
+function sendSuccess(form) {
+	const tooltip = document.getElementById('tooltip');
+	tooltip.innerHTML = '<p>Повідомлення відправлено</p>';
+	tooltip.classList.add('shown');
+}
+function sendError(form) {
+	const tooltip = document.getElementById('tooltip');
+	tooltip.innerHTML = '<p>Не вдалося відправити повідомлення</p>';
+	tooltip.classList.add('shown');	
+}
+
+function tooltipReset(form) {
+	const tooltip = document.getElementById('tooltip');
+	tooltip.innerHTML = '';
+	tooltip.classList.remove('shown');
+}
+
 //Short-form
 document.addEventListener('DOMContentLoaded', function () {
 	const shortForm = document.getElementById('shortForm');
@@ -14,25 +31,22 @@ document.addEventListener('DOMContentLoaded', function () {
         formData.append('image', formImage.files[0]);
 
 		if (error === 0) {
-            const formBox = document.querySelector('#shortFormBox');
-            const activeModal = document.querySelector('.is-active');
-			const overlay = document.querySelector('.overlay');
             shortForm.classList.add('_sending');
-			activeModal.classList.remove('is-active');
-			overlay.classList.remove('overlay');
             let response = await fetch('sendmail.php', {
                 method: 'POST',
                 body: formData
             });
             if (response.ok) {
                 let result = await response.json();
-                alert(result.message);
+                sendSuccess(form);
                 formPreview.innerHTML = '';
                 shortForm.reset();
                 shortForm.classList.remove('_sending');
+				setTimeout(tooltipReset(form), 3000);
             } else {
-                alert("Помилка! Не вдалося відправити форму");
+                sendError(form);
                 shortForm.classList.remove('_sending');
+				setTimeout(tooltipReset(form), 3000);
             }
 		} else {
 			alert("Будь ласка, перевірте коректність даних!");
@@ -110,13 +124,15 @@ document.addEventListener('DOMContentLoaded', function () {
             });
             if (response.ok) {
                 let result = await response.json();
-                alert(result.message);
+                sendSuccess(form);
                 formPreview.innerHTML = '';
                 payForm.reset();
                 payForm.classList.remove('_sending');
+				setTimeout(tooltipReset(form), 3000);
             } else {
-                alert("Помилка! Не вдалося відправити форму");
+                sendError(form);
                 payForm.classList.remove('_sending');
+				setTimeout(tooltipReset(form), 3000);
             }
 		} else {
 			alert("Будь ласка, перевірте коректність даних!");
