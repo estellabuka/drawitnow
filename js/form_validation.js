@@ -2,7 +2,7 @@
 
 function sendSuccess() {
 	const tooltip = document.getElementById('tooltip');
-	tooltip.innerHTML = '<p>Повідомлення відправлено</p>';
+	tooltip.innerHTML = '<p>Повідомлення відправлено 🥳</p>';
 	tooltip.classList.add('shown');
 }
 function sendError() {
@@ -12,7 +12,7 @@ function sendError() {
 }
 function formValidError() {
 	const tooltip = document.getElementById('tooltip');
-	tooltip.innerHTML = '<p>Будь ласка, перевірте коректність даних!</p>';
+	tooltip.innerHTML = '<p>Будь ласка, перевірте коректність даних! Всі поля мають бути заповнені 😊</p>';
 	tooltip.classList.add('shown');	
 }
 
