@@ -121,6 +121,7 @@ body {
     display: inline-flex;
     opacity: 1;
     box-shadow: 0 0 20px #8ABD63;
+    transition: all 2s;
   }
   .button::before {
     content: "";
@@ -146,11 +147,18 @@ body {
     content: '';
     color: #8ABD63;
   }
+  .tooltip p {
+    margin: auto;
+    text-align: center;
+  }
   .prime-btn:hover {
     background: #fff;
   } 
   .second-btn:hover {
     background: linear-gradient(95.6deg, #FFE7D9 12.37%, #FFEBB7 35.9%, #EDF493 65.82%, #D2FFAF 88.95%);
+  }
+  .tooltip.second-btn {
+    pointer-events: none;
   }
   .attention {
     position: fixed;
