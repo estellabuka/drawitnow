@@ -386,7 +386,7 @@ b {
         top: 20px;
     }
     .footer-items {
-        padding-bottom: 90px;
+        padding-bottom: 40px;
     }
     .footer-social {
         display: flex;
@@ -395,9 +395,6 @@ b {
     }
     .footer-bg {
         height: 380px;
-    }
-    .footer-text {
-        display: none;
     }
     .footer-contacts .footer-social span {
         bottom: -290px;
