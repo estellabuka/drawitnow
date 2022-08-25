@@ -23,7 +23,7 @@
     height: 564px;
     margin: 0 auto;
     position: relative;
-    border-radius: 60px;
+    border-radius: 60px 60px 0 60px;
     background: white;
     overflow: hidden;
     /*animation: night 20s infinite;*/
@@ -48,6 +48,7 @@
     top: 0;
     background-image: url("../img/img-noise-361x370-2.png");
     z-index: 99;
+    opacity: 0.4;
 }
 .box{
     box-sizing: border-box;
@@ -63,7 +64,7 @@
 .furn {
     width: 250px;
     position: absolute;
-    right: 0;
+    right: 6px;
     bottom: 0;
 }
 .chair {
