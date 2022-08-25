@@ -275,3 +275,8 @@
     }
     
 }
+@media (max-width: 526px) {
+    .file-check {
+        width: 100%;
+    }
+} 
