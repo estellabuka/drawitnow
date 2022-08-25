@@ -1,5 +1,28 @@
 "use strict"
 
+function sendSuccess() {
+	const tooltip = document.getElementById('tooltip');
+	tooltip.innerHTML = '<p>Повідомлення відправлено</p>';
+	tooltip.classList.add('shown');
+}
+function sendError() {
+	const tooltip = document.getElementById('tooltip');
+	tooltip.innerHTML = '<p>Не вдалося відправити повідомлення</p>';
+	tooltip.classList.add('shown');	
+}
+function formValidError() {
+	const tooltip = document.getElementById('tooltip');
+	tooltip.innerHTML = '<p>Будь ласка, перевірте коректність даних!</p>';
+	tooltip.classList.add('shown');	
+}
+
+function tooltipReset() {
+	const tooltip = document.getElementById('tooltip');
+	tooltip.innerHTML = '';
+	tooltip.classList.remove('shown');
+	console.log("done");
+}
+
 
 //Pay-form
 document.addEventListener('DOMContentLoaded', function () {
@@ -15,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function () {
         formData.append('image', formImage.files[0]);
 
 		if (error === 0) {
-            const formBox = document.querySelector('#payFormBox');
             payForm.classList.add('_sending');
             let response = await fetch('sendmail_pay.php', {
                 method: 'POST',
@@ -23,16 +45,19 @@ document.addEventListener('DOMContentLoaded', function () {
             });
             if (response.ok) {
                 let result = await response.json();
-                alert(result.message);
+                sendSuccess();
                 formPreview.innerHTML = '';
                 payForm.reset();
                 payForm.classList.remove('_sending');
+				setTimeout(tooltipReset, 3000);
             } else {
-                alert("Помилка! Не вдалося відправити форму");
+                sendError();
                 payForm.classList.remove('_sending');
+				setTimeout(tooltipReset, 3000);
             }
 		} else {
-			alert("Будь ласка, перевірте коректність даних!");
+			formValidError();
+			setTimeout(tooltipReset, 3000);
 		}
 	}
 
