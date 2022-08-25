@@ -77,6 +77,8 @@ body {
   
   /*Primary-button*/
   .button {
+    display: inline-block;
+    vertical-align: top;
     position: relative;
     padding: 17px 36px;
     border-radius: 30px;
@@ -87,13 +89,17 @@ body {
     font-size: 16px;
     line-height: 140%;
     color: #333D3F;
+    margin: 0 20px 0 0;
+    text-align: center;
+  }
+  .button:last-of-type {
+    margin: 0;
   }
   .prime-btn {
     background: linear-gradient(95.6deg, #FFE7D9 12.37%, #FFEBB7 35.9%, #EDF493 65.82%, #D2FFAF 88.95%);
   }
   .second-btn {
     background: #fff;
-    margin-left: 20px;
   }
   .file-btn {
     margin: 0;
