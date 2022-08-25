@@ -10,6 +10,11 @@ function sendError(form) {
 	tooltip.innerHTML = '<p>Не вдалося відправити повідомлення</p>';
 	tooltip.classList.add('shown');	
 }
+function formValidError(form) {
+	const tooltip = document.getElementById('tooltip');
+	tooltip.innerHTML = '<p>Будь ласка, перевірте коректність даних!</p>';
+	tooltip.classList.add('shown');	
+}
 
 function tooltipReset(form) {
 	const tooltip = document.getElementById('tooltip');
@@ -49,7 +54,8 @@ document.addEventListener('DOMContentLoaded', function () {
 				setTimeout(tooltipReset(form), 3000);
             }
 		} else {
-			alert("Будь ласка, перевірте коректність даних!");
+			formValidError(form);
+			setTimeout(tooltipReset(form), 3000);
 		}
 	}
 
@@ -112,12 +118,7 @@ document.addEventListener('DOMContentLoaded', function () {
         formData.append('image', formImage.files[0]);
 
 		if (error === 0) {
-            const formBox = document.querySelector('#payFormBox');
-			const activeModal = document.querySelector('.is-active');
-			const overlay = document.querySelector('.overlay');
             payForm.classList.add('_sending');
-			activeModal.classList.remove('is-active');
-			overlay.classList.remove('overlay');
             let response = await fetch('sendmail_pay.php', {
                 method: 'POST',
                 body: formData
@@ -135,7 +136,8 @@ document.addEventListener('DOMContentLoaded', function () {
 				setTimeout(tooltipReset(form), 3000);
             }
 		} else {
-			alert("Будь ласка, перевірте коректність даних!");
+			formValidError(form);
+			setTimeout(tooltipReset(form), 3000);
 		}
 	}
 
