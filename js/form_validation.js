@@ -29,7 +29,6 @@ function tooltipReset() {
 	const tooltip = document.getElementById('tooltip');
 	tooltip.innerHTML = '';
 	tooltip.classList.remove('shown');
-	console.log("done");
 }
 
 
