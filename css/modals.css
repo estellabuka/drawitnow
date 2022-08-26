@@ -259,6 +259,7 @@
     display: inline-flex;
     align-items: center;
     position: relative;
+    cursor: pointer;
 }
 .tariff_label::before {
     content: "";
