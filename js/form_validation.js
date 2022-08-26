@@ -15,7 +15,16 @@ function formValidError() {
 	tooltip.innerHTML = '<p>Будь ласка, перевірте коректність даних! Всі поля мають бути заповнені 😊</p>';
 	tooltip.classList.add('shown');	
 }
-
+function formFileTypeError() {
+	const tooltip = document.getElementById('tooltip');
+	tooltip.innerHTML = '<p>Завантажити можна лише зображення 😊</p>';
+	tooltip.classList.add('shown');	
+}
+function formFileSizeError() {
+	const tooltip = document.getElementById('tooltip');
+	tooltip.innerHTML = '<p>Розмір файлу не повинен перевищувати 4МБ 😊</p>';
+	tooltip.classList.add('shown');	
+}
 function tooltipReset() {
 	const tooltip = document.getElementById('tooltip');
 	tooltip.innerHTML = '';
@@ -102,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 	//Telegram test
 	function tgTest(input) {
-		return !/^@[\w-]/.test(input.value);
+		return !/^[\w-]/.test(input.value);
 	}
 
     //formPreview
@@ -115,12 +124,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function uploadFile(file) {
         if (!['image/jpeg', 'image/png', 'image/gif'].includes(file.type)) {
-            alert('Завантажити можна лише зображення');
+            formFileTypeError();
             formImage.value = '';
+			setTimeout(tooltipReset, 3000);
             return;
         }
-        if (file.size > 2 * 1024 * 1024) {
-            alert('Розмір файлу не повинен перевищувати 2МБ');
+        if (file.size > 2 * 2048 * 2048) {
+            formFileSizeError();
+			setTimeout(tooltipReset, 3000);
             return;
         }
 
