@@ -93,7 +93,7 @@ body {
     text-align: center;
   }
   .button:last-of-type {
-    margin: 0;
+    margin-right: 0;
   }
   .prime-btn {
     background: linear-gradient(95.6deg, #FFE7D9 12.37%, #FFEBB7 35.9%, #EDF493 65.82%, #D2FFAF 88.95%);
