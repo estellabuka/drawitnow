@@ -11,9 +11,9 @@ $mail->setLanguage('uk', 'phpmailer/language/');
 $mail->IsHTML(true);
 
 //Автор та адресат
-$mail->setFrom('kovalenko.olexandra@gmail.com', 'Новий учень');
-$mail->addAddress('kovalenko.olexandra@gmail.com');
-$mail->Subjest = 'Привіт! На курс записався новий учень!';
+$mail->setFrom('info@drawitnow.online', 'Новий учень');
+$mail->addAddress('info@drawitnow.online');
+$mail->Subjest = 'Привіт! На курс хоче новий учень!';
 
 //Mail body
 $body = '<h1>Новий учень записався на безкоштовний курс</h1>';
