@@ -38,7 +38,7 @@ if(trim(!empty($_POST['telegram']))){
     $body.="<p><strong>Контакт:</strong> ".$_POST['telegram']."</p>";
 }
 if(trim(!empty($_POST['tariff']))){
-    $body.="<p><strong>Тариф:</strong> ".$_POST['tariff']."</p>";
+    $body.="<p><strong>Тариф:</strong> ".$tariff."</p>";
 }
 
 
