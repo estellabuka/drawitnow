@@ -15,6 +15,15 @@ $mail->setFrom('info@drawitnow.online', 'Новий учень');
 $mail->addAddress('info@drawitnow.online');
 $mail->Subjest = 'Привіт! На курс хоче новий учень!';
 
+//Tariff
+$tariff = "Самостійний";
+if ($_POST['tariff'] == "team") {
+    $tariff = "Командний";
+}
+if ($_POST['tariff'] == "advanced") {
+    $tariff = "Розширений";
+}
+
 //Mail body
 $body = '<h1>Новий учень записався на безкоштовний курс</h1>';
 
@@ -26,6 +35,9 @@ if(trim(!empty($_POST['e-mail']))){
 }
 if(trim(!empty($_POST['telegram']))){
     $body.="<p><strong>Контакт:</strong> ".$_POST['telegram']."</p>";
+}
+if(trim(!empty($_POST['tariff']))){
+    $body.='<p><strong>Тариф:</strong> '.$tariff'</p>';
 }
 
 //File load
