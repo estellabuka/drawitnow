@@ -25,7 +25,7 @@ if ($_POST['tariff'] == "advanced") {
 }
 
 //Mail body
-$body = '<h1>Новий учень записався на безкоштовний курс</h1>';
+$body = '<h1>Новий учень хоче на курс</h1>';
 
 if(trim(!empty($_POST['name']))){
     $body.="<p><strong>Ім'я:</strong> ".$_POST['name']."</p>";
@@ -35,9 +35,6 @@ if(trim(!empty($_POST['e-mail']))){
 }
 if(trim(!empty($_POST['telegram']))){
     $body.="<p><strong>Контакт:</strong> ".$_POST['telegram']."</p>";
-}
-if(trim(!empty($_POST['tariff']))){
-    $body.='<p><strong>Тариф:</strong> '.$tariff'</p>';
 }
 
 //File load
