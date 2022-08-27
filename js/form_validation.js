@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		if (error === 0) {
             payForm.classList.add('_sending');
-            let response = await fetch('sendmail_pay.php', {
+            let response = await fetch('sendmail.php', {
                 method: 'POST',
                 body: formData
             });
