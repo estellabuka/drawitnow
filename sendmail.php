@@ -32,10 +32,10 @@ if(trim(!empty($_POST['telegram']))){
 
 //Tariff
 $tariff = "Самостійний";
-if ($_POST['tariff'] == "team") {
+if($_POST['tariff'] == "team"){
     $tariff = "Командний";
 }
-if ($_POST['tariff'] == "advanced") {
+if($_POST['tariff'] == "advanced"){
     $tariff = "Розширений";
 }
 
