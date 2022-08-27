@@ -156,6 +156,9 @@
     .chamomile-holder {
       top: unset;
       bottom: 0;
+      left: 50%;
+      margin: 0 0 0 -400px;
+      right: auto;
     }
     .chamomile {
       bottom: 0;
@@ -185,7 +188,8 @@
     .about-course-text {
       padding: 0;
     }
-    .chamomile {
+    .chamomile,
+    .chamomile-holder {
       display: none;
     }
   }
