@@ -64,7 +64,10 @@ body {
   .green-font {
     color: #8ABD63;
   }
-
+  .note {
+    color: #8ABD63;
+    font-size: 14px;
+  }
   /*Caption*/
 
   .description-text {
