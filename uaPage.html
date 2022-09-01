@@ -984,134 +984,53 @@
         const block = document.querySelector('.js_textBlock');
         let iterator = 0;
         const speed = 50;
-        const text = `h1, ol, ul, li, button {
+        const text = `*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}        
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
     margin: 0;
-    padding: 0
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
-
-button {
-    border: none;
-    background: none
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
 }
-
 body {
-    background: #202124
+    line-height: 1;
 }
-
-body, input, button {
-    font-size: 14px;
-    font-family: arial, sans-serif;
-    color: #bdc1c6
+ol, ul {
+    list-style: none;
 }
-
-a {
-    color: #8ab4f8;
-    text-decoration: none
+blockquote, q {
+    quotes: none;
 }
-
-a:hover, a:active {
-    text-decoration: underline
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
 }
-
-a:visited {
-    color: #c58af9
-}
-
-html, body {
-    min-width: 400px
-}
-
-body, html {
-    height: 100%;
-    margin: 0;
-    padding: 0
-}
-
-.gb_1a:not(.gb_Hd) {
-    font: 13px/27px Roboto,Arial,sans-serif;
-    z-index: 986
-}
-
-@-webkit-keyframes gb__a {
-    0% {
-        opacity: 0
-    }
-    50% {
-        opacity: 1
-    }
-}
-
-@keyframes gb__a {
-    0% {
-        opacity: 0
-    }
-    50% {
-        opacity: 1
-    }
-}
-
-a.gb_W {
-    border: none;
-    color: #4285f4;
-    cursor: default;
-    font-weight: bold;
-    outline: none;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    white-space: nowrap;
-    -webkit-user-select: none
-}
-
-a.gb_W:hover:after, a.gb_W:focus:after {
-    background-color: rgba(0, 0, 0, .12);
-    content: "";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%
-}
-
-a.gb_W:hover, a.gb_W:focus {
-    text-decoration: none
-}
-
-a.gb_W:active {
-    background-color: rgba(153,153,153,.4);
-    text-decoration: none
-}
-
-a.gb_X {
-    background-color: #4285f4;
-    color: #fff
-}
-
-a.gb_X:active {
-    background-color: #0043b2
-}
-
-.gb_Z {
-    -webkit-box-shadow: 0 1px 1px #000;
-    box-shadow: 0 1px 1px #000;
-}
-
-.gb_W, .gb_X, .gb_0, .gb_1 {
-    display: inline-block;
-    line-height: 28px;
-    padding: 0 12px;
-    -webkit-border-radius: 2px;
-    border-radius: 2px
-}
-
-.gb_0 {
-    background: #f8f8f8;
-    border: 1px solid #c6c6c6
-}
-
-.gb_1 {
-    background: #f8f8f8
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }`;
 
         (function type(){
