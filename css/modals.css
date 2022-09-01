@@ -166,6 +166,7 @@
     border-radius: 60px;
     padding: 60px;
     align-self: flex-start;
+    flex: 0 0 40%;
 }
 .payment_block {
     margin-bottom: 60px;
