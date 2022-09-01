@@ -212,4 +212,7 @@
     .card-price {
         margin-top: 10px;
     }
+    .sub-price {
+        font-size: 14px;
+    }
 }
