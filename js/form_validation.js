@@ -87,6 +87,9 @@ document.addEventListener('DOMContentLoaded', function () {
 					formAddError(input);
 					error++;
 				}
+				if (input.value.includes('@')) {
+					input.value=`${input.value.slice(1, )}`;
+				}
 			} else {
 				if (input.value === '') {
 				formAddError(input);
