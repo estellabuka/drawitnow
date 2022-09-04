@@ -345,7 +345,10 @@
     
 }
 @media (max-width: 526px) {
-    .file-check {
-        width: 100%;
+    .modal_form {
+        display: block;
+    }
+    .modal_button {
+        margin-top: 10px;
     }
 } 

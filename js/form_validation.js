@@ -87,6 +87,9 @@ document.addEventListener('DOMContentLoaded', function () {
 					formAddError(input);
 					error++;
 				}
+				if (input.value.includes('@')) {
+					input.value=`${input.value.slice(1, )}`;
+				}
 			} else {
 				if (input.value === '') {
 				formAddError(input);
@@ -110,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 	//Telegram test
 	function tgTest(input) {
-		return !/^[\w-]/.test(input.value);
+		return !/^[a-z0-9_@]{5,16}$/.test(input.value);
 	}
 
     //formPreview
