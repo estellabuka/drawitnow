@@ -42,10 +42,6 @@
     flex: 0 0 50%;
     padding: 60px 0 60px 60px;
 }
-.modal_form {
-    display: flex;
-    flex-direction: column;
-}
 .modal_form:after {
     content: "";
     position: fixed;
@@ -75,7 +71,7 @@
 }
 .modal_inputWrapper.file_inputWrapper {
     background: 0;
-    width: auto;
+    width: 100%;
 }
 
 .modal_input {
@@ -345,9 +341,9 @@
     
 }
 @media (max-width: 526px) {
-    .modal_form {
-        display: block;
-    }
+    .file-check {
+        width: 100%;
+    }    
     .modal_button {
         margin-top: 10px;
     }
