@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 	//Telegram test
 	function tgTest(input) {
-		return !/^[a-z0-9_@]{5,16}$/.test(input.value);
+		return !/^[A-Za-z0-9_@]{5,16}$/.test(input.value);
 	}
 
     //formPreview
