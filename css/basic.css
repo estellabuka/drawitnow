@@ -67,6 +67,7 @@ body {
   .note {
     color: #8ABD63;
     font-size: 14px;
+    display: block;
   }
   /*Caption*/
 
